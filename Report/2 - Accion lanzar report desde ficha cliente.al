@@ -1,22 +1,6 @@
 pageextension 50202 CamposPageCLiente extends "Customer Card"
 {
 
-    layout
-    {
-        addafter("Address & Contact")
-        {
-            group(gNick)
-            {
-                field(Nick; Nick)
-                {
-                    Importance = Promoted;
-                }
-                field(Color; Color) { }
-
-            }
-        }
-
-    }
 
     actions
     {
@@ -46,21 +30,3 @@ pageextension 50202 CamposPageCLiente extends "Customer Card"
 
 
 
-
-pageextension 50203 CamposPageMovProducto extends "Item Ledger Entries"
-{
-    layout
-    {
-        addafter(Quantity)
-        {
-
-            field(Nick; Nick)
-            {
-                ShowMandatory = true;
-            }
-            field(Color; Color) { }
-        }
-    }
-
-
-}

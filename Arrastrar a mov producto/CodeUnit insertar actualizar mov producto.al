@@ -11,7 +11,9 @@ codeunit 50204 Eventos
             if Cliente.get(ItemLedgerentry."Source No.") then begin
                 ItemLedgerentry.Nick := Cliente.Nick;
                 ItemLedgerentry.Color := Cliente.Color;
-                ItemLedgerentry.Equipo := Cliente.Equipo
+                ItemLedgerentry.Equipo := Cliente.Equipo;
+                ItemLedgerentry.Coche := ItemLedgerentry.Coche;
+
             end;
         end;
     end;

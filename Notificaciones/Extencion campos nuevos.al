@@ -5,6 +5,7 @@ codeunit 50211 Gestion_Notificaciones
     local procedure control_Nombre_Cliente(Rec: Record Customer)
     var
         Notificacion: Notification;
+
     begin
         if strlen(Rec.Name) < 10 then begin
             //Creamos el mensaje
@@ -16,7 +17,10 @@ codeunit 50211 Gestion_Notificaciones
             Notificacion.SetData('NombreCliente', Rec.Name);
 
             //Añadimos posibles acciones
-            Notificacion.AddAction(Text0002, Codeunit::Accion_Notificaciones, Rellenar_Nombre_Cliente);
+            Notificacion.AddAction(Text0002, Codeunit::Accion_Notificaciones, 'Rellenar_Nombre_Cliente');
+
+            //Enviamos la notificación
+            Notificacion.Send();
         end;
     end;
 

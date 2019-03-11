@@ -839,11 +839,11 @@ End Function
         <Field Name="Nombre">
           <DataField>Nombre</DataField>
         </Field>
-        <Field Name="Nick">
-          <DataField>Nick</DataField>
+        <Field Name="Dir1">
+          <DataField>Dir1</DataField>
         </Field>
-        <Field Name="Color">
-          <DataField>Color</DataField>
+        <Field Name="dir2">
+          <DataField>dir2</DataField>
         </Field>
         <Field Name="Usuario">
           <DataField>Usuario</DataField>

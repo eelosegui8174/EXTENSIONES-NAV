@@ -17,7 +17,7 @@ tableextension 50200 CamposCliente extends Customer
     }
 
 }
-1
+
 tableextension 50201 CamposMovProducto extends "Item Ledger Entry"
 {
     fields

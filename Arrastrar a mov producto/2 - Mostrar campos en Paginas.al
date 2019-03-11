@@ -12,6 +12,7 @@ pageextension 50202 CamposPageCLiente extends "Customer Card"
                     Importance = Promoted;
                 }
                 field(Color; Color) { }
+                field(Equipo; Equipo) { }
 
             }
         }
@@ -59,6 +60,7 @@ pageextension 50203 CamposPageMovProducto extends "Item Ledger Entries"
                 ShowMandatory = true;
             }
             field(Color; Color) { }
+            field(Equipo; Equipo) { }
         }
     }
 

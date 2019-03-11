@@ -13,6 +13,7 @@ pageextension 50202 CamposPageCLiente extends "Customer Card"
                 }
                 field(Color; Color) { }
                 field(Equipo; Equipo) { }
+                field(Coche;Coche){}
 
             }
         }
@@ -61,6 +62,7 @@ pageextension 50203 CamposPageMovProducto extends "Item Ledger Entries"
             }
             field(Color; Color) { }
             field(Equipo; Equipo) { }
+                  field(Coche;Coche){}
         }
     }
 

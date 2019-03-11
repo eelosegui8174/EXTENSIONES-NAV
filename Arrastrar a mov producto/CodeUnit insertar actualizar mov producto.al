@@ -10,7 +10,8 @@ codeunit 50204 Eventos
             CLEAR(Cliente);
             if Cliente.get(ItemLedgerentry."Source No.") then begin
                 ItemLedgerentry.Nick := Cliente.Nick;
-                ItemLedgerentry.Color := cliente.Color;
+                ItemLedgerentry.Color := Cliente.Color;
+                ItemLedgerentry.Equipo := Cliente.Equipo
             end;
         end;
     end;

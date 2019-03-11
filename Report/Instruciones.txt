@@ -1,0 +1,11 @@
+Para generar los ficheros :
+   CustomerLedgerEntry.docx
+   CustomerLedgerEntry.rdl
+
+Cuando indiquemos aarriba 
+  RDLCLayout = '.\REPORTS\CustomerLedgerEntry.rdl';
+  WordLayout = '.\REPORTS\CustomerLedgerEntry.docx'; 
+
+
+Pulsaremos Ctrl + mayuscula + B   y se generan los ficheros
+Un avez generados ya podemos abrirlos con SQL Report builder o Word

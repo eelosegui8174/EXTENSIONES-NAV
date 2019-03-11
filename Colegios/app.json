@@ -1,23 +1,23 @@
 {
-  "id": "163a1044-95fc-4d31-9f5e-c08bedd35eb1",
-  "name": "Colegios",
-  "publisher": "Default publisher",
+  "id": "bc2ed47f-5fb6-4016-a8cf-95c5cb125681",
+  "name": "Colegio",
+  "publisher": "Eneko",
   "brief": "",
-  "description": "",
+  "description": "1º versión colegio",
   "version": "1.0.0.0",
   "privacyStatement": "",
   "EULA": "",
   "help": "",
   "url": "",
-  "logo": "",
+  "logo": "./Icono/logo.png",
   "capabilities": [],
   "dependencies": [],
   "screenshots": [],
-  "platform": "13.0.0.0",
-  "application": "13.0.0.0",
+  "platform": "11.0.0.0",
+  "application": "11.0.0.0",
   "idRange": {
     "from": 50100,
     "to": 50149
-  },
-  "runtime": "2.3"
+  }
+  
 }

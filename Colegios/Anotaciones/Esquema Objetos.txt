@@ -1,0 +1,19 @@
+Estructura proyecto
+Colegio   (Tabla:50100       FICHA: 50100 )
+________________________________________________________________________________________________________________________________
+....Cursos                      (Tabla:       Lista:       Ficha: )
+
+....Asignaturas                 (Tabla:50103       Lista:50105       Ficha: )
+
+....Aulas                       (Tabla:       Lista:       Ficha: )
+.........Tipos de Aulas         (Tabla:       Lista:              )   'Biblioteca, Audiovisuales, quimica, física, reuniones, clase ......
+
+....Profesores                  (Tabla:       Lista:       Ficha: )
+.........Asignaturas Profesor   (Tabla:       Lista:              )
+
+....Alumnos                     (Tabla:50102       Lista:50102       Ficha: )
+.........Notas                  (Tabla:       Lista:)                 'DNI, Año, trimestre, curso, aignatura, nota, observaciones
+.........Cursos matriculado     (Tabla:       Lista:       Ficha: )   'DNI, año, curso.....
+.........Ausencias              (Tabla:       Lista:              )   'DNI, Año, curso, asignatura, día, hora, observacion........
+
+Calendario                      (Tabla:       Lista:              ).

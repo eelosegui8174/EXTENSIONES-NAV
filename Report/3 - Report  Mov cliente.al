@@ -13,13 +13,13 @@ report 50206 Mov_Cliente
         dataitem(Customer; Customer)
         {
             //para poder filtrar por estos campos
-            RequestFilterFields = "No.", Nick;
+            RequestFilterFields = "No.";
 
             column(Filtros; Customer.GetFilters()) { }
             column(CodCliente; "No.") { }
             column(Nombre; Name) { }
-            column(Nick; Nick) { }
-            column(Color; Color) { }
+            column(Dir1;Address) { }
+            column(dir2;"Address 2") { }
             column(Usuario; userid) { }
 
             //MOVIMIENTOS DE PRODUCTO PARA EL CLIENTE

@@ -1,4 +1,4 @@
-codeunit 50211 Gestion_Notificaciones
+codeunit 50213 Gestion_Notificaciones
 {
 
     [EventSubscriber(ObjectType::Table, 18, 'OnAfterValidateEvent', 'Name', false, false)]
@@ -25,7 +25,7 @@ codeunit 50211 Gestion_Notificaciones
     end;
 
     var
-        Text0001: TextConst ENU = 'Length of the name %1 must be more than 10', ESP = 'La longitud del nombre %1 ha de ser mas de 10';
+        Text0001: TextConst ENU = 'Length of the name must be more than 10', ESP = 'La longitud del nombre ha de ser mas de 10';
         Text0002: TextConst ENU = 'Add spaces', ESP = 'Rellenar espacios';
 
 

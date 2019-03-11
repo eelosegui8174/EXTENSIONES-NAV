@@ -15,6 +15,7 @@ tableextension 50200 CamposCliente extends Customer
         field(50022; Aficion; Text[50])
         { }
         field(50023; Equipo; Text[30]) { }
+        field(50024; Coche; Text[30]) { }
     }
 
 }
@@ -36,6 +37,7 @@ tableextension 50201 CamposMovProducto extends "Item Ledger Entry"
             Editable = false;
         }
         field(50023; Equipo; Text[30]) { }
+        field(50024; Coche; Text[30]) { }
     }
 
 }

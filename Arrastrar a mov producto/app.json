@@ -1,0 +1,24 @@
+{
+  "id": "74fb2b57-5809-40fe-b790-5934f8226ee5",
+  "name": "Arrastrar a mov producto",
+  "publisher": "Default publisher",
+  "brief": "",
+  "description": "",
+  "version": "1.0.0.0",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "capabilities": [],
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "13.0.0.0",
+  "application": "13.0.0.0",
+  "idRange": {
+    "from": 50200,
+    "to": 50210
+  },
+  "runtime": "2.0",
+  "showMyCode": true
+}

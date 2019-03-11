@@ -35,6 +35,7 @@ tableextension 50201 CamposMovProducto extends "Item Ledger Entry"
             OptionCaptionML = ENU = ' ,Red,Yellow,Blue', ESP = ' ,Rojo,Amarillo,Azul';
             Editable = false;
         }
+        field(50023; Equipo; Text[30]) { }
     }
 
 }

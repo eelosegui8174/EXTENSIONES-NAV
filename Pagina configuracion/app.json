@@ -1,0 +1,24 @@
+{
+  "id": "57bbbaa7-79ba-427c-a597-fde1d4c9c0e4",
+  "name": "Pagina configuracion",
+  "publisher": "Default publisher",
+  "brief": "",
+  "description": "",
+  "version": "1.0.0.0",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "capabilities": [],
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "11.0.0.0",
+  "application": "11.0.0.0",
+  "idRange": {
+    "from": 50100,
+    "to": 50149
+  },
+  "runtime": "2.0",
+  "features": ["TranslationFile"]
+}

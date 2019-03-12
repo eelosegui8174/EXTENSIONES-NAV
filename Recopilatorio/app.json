@@ -1,0 +1,24 @@
+{
+  "id": "beafab6c-9c59-4661-9a5d-567b05b00896",
+  "name": "Recopilatorio",
+  "publisher": "Default publisher",
+  "brief": "",
+  "description": "",
+  "version": "1.0.0.0",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "capabilities": [],
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "11.0.0.0",
+  "application": "11.0.0.0",
+  "idRange": {
+    "from": 50100,
+    "to": 50150
+  },
+  "runtime": "2.0",
+  "features": [ "TranslationFile" ]
+}

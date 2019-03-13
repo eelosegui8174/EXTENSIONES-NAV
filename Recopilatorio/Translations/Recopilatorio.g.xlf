@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
   <file datatype="xml" source-language="en-US" target-language="en-US" original="Recopilatorio">
@@ -41,4 +42,49 @@
       </group>
     </body>
   </file>
+=======
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="en-US" original="Recopilatorio">
+    <body>
+      <group id="body">
+        <trans-unit id="Page 1231848670 - Control 174010921 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Traduction</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Principal - Control Grupo - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1231848670 - Control 3422159375 - Property 3830149458" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Configuration page</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Principal - Control Configurador - Property caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1231848670 - Control 3344066439 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Types of variables</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Principal - Control Variables - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1231848670 - Control 11323104 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Text</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Principal - Control Var1 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1231848670 - Control 649019721 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Integer</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Principal - Control Var2 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1231848670 - Control 1286716338 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Principal - Control Var3 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1231848670 - Control 1924412955 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Array</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Principal - Control Var4 - Property Caption</note>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+>>>>>>> 7ebc8907635d9d20980cdd61fd91b3032026485d
 </xliff>

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
   <file datatype="xml" source-language="en-US" target-language="es" original="Pagina configuracion" tool-id="MultilingualAppToolkit" product-name="n/a" product-version="n/a" build-num="n/a">
@@ -151,4 +152,159 @@
       </group>
     </body>
   </file>
+=======
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="es" original="Pagina configuracion" tool-id="MultilingualAppToolkit" product-name="n/a" product-version="n/a" build-num="n/a">
+    <header>
+      <tool tool-id="MultilingualAppToolkit" tool-name="Multilingual App Toolkit" tool-version="4.0.1900.0" tool-company="Microsoft" />
+    </header>
+    <body>
+      <group id="body" datatype="resx">
+        <trans-unit id="Page 2337252321 - Control 1898105261 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion"></target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Configurador_Base - Control MediaStandar - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2337252321 - Control 406917336 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion"></target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Configurador_Base - Control MediaDone - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2337252321 - Control 2180503395 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Initial page</source>
+          <target state="translated">Página inicial</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Configurador_Base - Control PaginaInicial - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2337252321 - Control 1991310488 - Property 3830149458" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Final page</source>
+          <target state="translated">Página final</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Configurador_Base - Control PaginaFinal - Property caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3571681834 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Customer Setup</source>
+          <target state="translated">Configurador cliente</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Configurador_Cliente - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3571681834 - Control 1898105261 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <target state="new"></target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Configurador_Cliente - Control MediaStandar - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3571681834 - Control 406917336 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Push finish to confirm the customer</source>
+          <target state="translated">Pulsar finalizar para completar cliente</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Configurador_Cliente - Control MediaDone - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3571681834 - Control 2180503395 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Initial page</source>
+          <target state="translated">Página inicial</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Configurador_Cliente - Control PaginaInicial - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3571681834 - Control 814966011 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Name</source>
+          <target state="translated">Nombre</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Configurador_Cliente - Control Nombre - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3571681834 - Control 2283439229 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Name 2</source>
+          <target state="translated">Nombre 2</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Configurador_Cliente - Control Nombre2 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3571681834 - Control 2079646257 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Address</source>
+          <target state="translated">Dirección</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Configurador_Cliente - Control SegundaPagina - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3571681834 - Control 60182081 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Customer address</source>
+          <target state="translated">Dirección cliente</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Configurador_Cliente - Control Dir - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3571681834 - Control 2359161876 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Customer address 2</source>
+          <target state="translated">Dirección 2 cliente</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Configurador_Cliente - Control Direccion2 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3571681834 - Control 277600085 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>City</source>
+          <target state="translated">Ciudad</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Configurador_Cliente - Control Poblacion - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3571681834 - Control 4125097576 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Contact</source>
+          <target state="translated">Contacto</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Configurador_Cliente - Control Card - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3571681834 - Control 646935216 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Phone</source>
+          <target state="translated">Teléfono</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Configurador_Cliente - Control Phone - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3571681834 - Control 985328067 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>E-Mail</source>
+          <target state="translated">E-Mail</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Configurador_Cliente - Control E-mail - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3571681834 - Control 2513381473 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Fax</source>
+          <target state="translated">Fax</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Configurador_Cliente - Control Fax - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3571681834 - Control 633819257 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Gen. Bus. Posting Group</source>
+          <target state="translated">Grupo registro neg. gen.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Configurador_Cliente - Control Gen. Bus. Posting Group - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3571681834 - Control 1844012642 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>VAT Bus. Posting Group</source>
+          <target state="translated">Grupo registro IVA neg.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Configurador_Cliente - Control VAT Bus. Posting Group - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3571681834 - Control 410940989 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Customer Posting Group</source>
+          <target state="translated">Grupo registro cliente</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Configurador_Cliente - Control Customer Posting Group - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3571681834 - Control 1991310488 - Property 3830149458" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Final page</source>
+          <target state="translated">Página final</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Configurador_Cliente - Control PaginaFinal - Property caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3571681834 - Action 1257812925 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Init</source>
+          <target state="translated">Inicio</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Configurador_Cliente - Action Inicio - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3571681834 - Action 277502140 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Previous</source>
+          <target state="translated">Anterior</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Configurador_Cliente - Action Anterior - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3571681834 - Action 3204813957 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Next</source>
+          <target state="translated">Siguiente</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Configurador_Cliente - Action Siguiente - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3571681834 - Action 3747271888 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Finish</source>
+          <target state="translated">Finalizar</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Configurador_Cliente - Action Finalizar - Property Caption</note>
+        </trans-unit>
+         <trans-unit id="PageExtension 3422159375 - Action 1977222891 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Configurator</source>
+          <target>Configurador</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Configurador - Action Traduction - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3422159375 - Action 4001577164 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Configuration page</source>
+          <target>Página configuración</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Configurador - Action Pagina - Property Caption</note>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+>>>>>>> 7ebc8907635d9d20980cdd61fd91b3032026485d
 </xliff>

@@ -1,0 +1,24 @@
+{
+  "id": "5d44966e-de8f-4916-b0b9-accfd2f44fda",
+  "name": "Ejemplo traducciones",
+  "publisher": "Default publisher",
+  "brief": "",
+  "description": "",
+  "version": "1.0.0.0",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "capabilities": [],
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "11.0.0.0",
+  "application": "11.0.0.0",
+  "idRange": {
+    "from": 50100,
+    "to": 50149
+  },
+  "runtime": "2.0",
+  "features": ["TranslationFile"]
+}

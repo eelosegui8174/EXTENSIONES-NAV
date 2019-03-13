@@ -1,0 +1,31 @@
+{
+  "id": "ae5b785d-9502-4968-b1f5-059844a1c4e3",
+  "name": "Conecta extension coches",
+  "publisher": "Default publisher",
+  "brief": "",
+  "description": "",
+  "version": "1.0.0.0",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "capabilities": [],
+  "dependencies": [
+    {
+      "appId": "6a8caa8f-278c-4350-96ae-408d4a6aed2a",
+      "name": "Ejercicio Cliente Coche",
+      "publisher": "Eneko",
+      "version": "1.0.0.0"
+    }
+  ],
+  "screenshots": [],
+  "platform": "13.0.0.0",
+  "application": "13.0.0.0",
+  "idRange": {
+    "from": 50100,
+    "to": 50149
+  },
+  "runtime": "2.0"
+
+}

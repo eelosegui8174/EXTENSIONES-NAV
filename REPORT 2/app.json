@@ -1,0 +1,24 @@
+{
+  "id": "8cd11409-2627-4862-8215-324cbcd255d0",
+  "name": "REPORT",
+  "publisher": "Default publisher",
+  "brief": "",
+  "description": "",
+  "version": "1.0.0.0",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "capabilities": [],
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "13.0.0.0",
+  "application": "13.0.0.0",
+  "idRange": {
+    "from": 50100,
+    "to": 50400
+  },
+  "runtime": "2.0"
+ 
+}

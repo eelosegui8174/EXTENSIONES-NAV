@@ -1,0 +1,24 @@
+{
+  "id": "e2cef6e4-55db-437f-8aa3-aeb06b4bd94c",
+  "name": "Notificaciones",
+  "publisher": "Default publisher",
+  "brief": "",
+  "description": "",
+  "version": "1.0.0.0",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "capabilities": [],
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "11.0.0.0",
+  "application": "11.0.0.0",
+  "idRange": {
+    "from": 50100,
+    "to": 50151
+  },
+  "runtime": "2.0"
+
+}

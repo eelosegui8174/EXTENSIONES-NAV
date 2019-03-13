@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="ES" original="Ejemplo traducciones" tool-id="MultilingualAppToolkit" product-name="n/a" product-version="n/a" build-num="n/a">
+    <header>
+      <tool tool-id="MultilingualAppToolkit" tool-name="Multilingual App Toolkit" tool-version="4.0.1900.0" tool-company="Microsoft" />
+    </header>
+    <body>
+      <group id="body" datatype="resx">
+        <trans-unit id="Table 152742593 - Property 3830149458" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Traduction example</source>
+          <target state="translated">Ejemplo Traducción</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Ejemplo_Tradcutor - Property caption</note>
+        </trans-unit>
+        <trans-unit id="Table 152742593 - Field 3004954119 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Code</source>
+          <target state="translated">Código</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Ejemplo_Tradcutor - Field Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 152742593 - Field 2961552353 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Name</source>
+          <target state="translated">Nombre</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Ejemplo_Tradcutor - Field Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3430183880 - Control 3004954119 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Code</source>
+          <target state="translated">Código</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Pagina_ejemplo_traducciones - Control Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3430183880 - Control 2961552353 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Name</source>
+          <target state="translated">Nombre</target>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Pagina_ejemplo_traducciones - Control Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4005374474 - Action 1977222891 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Traduction</source>
+          <target state="translated">Traducción</target>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Traduccion - Action Traduction - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4005374474 - Action 4001577164 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Traduced page</source>
+          <target state="translated">Página traducida</target>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Traduccion - Action Pagina - Property Caption</note>
+        </trans-unit>
+          <trans-unit id="Page 3430183880 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Traduced page example</source>
+          <target state="translated">Ejemplo página traducida</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Pagina_ejemplo_traducciones - Property Caption</note>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

@@ -1,5 +1,5 @@
-<<<<<<< HEAD
-page 50100 Configurador_Base
+
+page 50250 Configurador_Base
 {
     PageType = NavigatePage;
     ApplicationArea = All;

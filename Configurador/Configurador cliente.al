@@ -1,5 +1,5 @@
-<<<<<<< HEAD
-page 50101 Configurador_Cliente
+
+page 50251 Configurador_Cliente
 {
     PageType = NavigatePage;
     ApplicationArea = All;

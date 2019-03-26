@@ -1,0 +1,100 @@
+{
+    "name": "al-object-designer",
+    "displayName": "AL Object Designer",
+    "description": "Object Designer optimized for (Dynamics 365 Business Central) AL Language development.",
+    "version": "0.0.6-alpha.4",
+    "publisher": "martonsagi",
+    "license": "MIT",
+    "author": {
+        "name": "Márton Sági",
+        "email": "marton@dynasist.com"
+    },
+    "homepage": "https://github.com/martonsagi/al-object-designer/blob/master/README.md",
+    "bugs": {
+        "url": "https://github.com/martonsagi/al-object-designer/issues",
+        "email": "marton@dynasist.com"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/martonsagi/al-object-designer.git"
+    },
+    "keywords": [
+        "AL",
+        "AL Extensions",
+        "Business Central",
+        "CSIDE",
+        "Dynamics NAV"
+    ],
+    "engines": {
+        "vscode": "^1.29.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onCommand:extension.openALWindow",
+        "onCommand:extension.openALDesignWindow",
+        "*"
+    ],
+    "icon": "images/icon.png",
+    "main": "./out/extension",
+    "contributes": {
+        "commands": [
+            {
+                "command": "extension.openALWindow",
+                "title": "AL Object Designer"
+            },
+            {
+                "command": "extension.openALDesignWindow",
+                "title": "AL Page Designer"
+            }
+        ],
+        "menus": {
+            "editor/title": [{
+                "when": "resourceLangId == al",
+                "command": "extension.openALDesignWindow",
+                "group": "navigation"
+            }],
+            "explorer/context": [{
+                "command": "extension.openALWindow",
+                "group": "2_workspace"
+            }]
+        },
+        "configuration": {
+            "type": "object",
+            "title": "AL Object Designer configuration",
+            "properties": {
+                "alObjectDesigner.renderPageParts": {
+                    "type": "boolean",
+                    "default": true,
+                    "description": "Render PageParts in AL Page Designer."
+                }
+            }
+        }
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "test": "npm run compile && node ./node_modules/vscode/bin/test"
+    },
+    "extensionDependencies": [
+        "waldo.crs-al-language-extension"
+    ],
+    "devDependencies": {
+        "typescript": "^3.1.4",
+        "vscode": "^1.1.25",
+        "tslint": "^5.8.0",
+        "@types/node": "^8.10.25",
+        "@types/mocha": "^2.2.42"
+    },
+    "dependencies": {
+        "balanced-match": "^1.0.0",
+        "clipboardy": "^1.2.3",
+        "fs-extra": "^7.0.1",
+        "hash.js": "^1.1.7",
+        "jszip": "^3.1.5",
+        "thenby": "^1.3.0"
+    }
+}

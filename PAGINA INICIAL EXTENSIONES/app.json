@@ -1,0 +1,23 @@
+{
+  "id": "05948def-5936-492e-8120-50781be7dbb2",
+  "name": "PAGINA INICIAL EXTENSIONES",
+  "publisher": "Default publisher",
+  "brief": "",
+  "description": "",
+  "version": "1.0.0.0",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "capabilities": [],
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "13.0.0.0",
+  "application": "13.0.0.0",
+  "idRange": {
+    "from": 50500,
+    "to": 50500
+  },
+  "runtime": "2.0"
+}

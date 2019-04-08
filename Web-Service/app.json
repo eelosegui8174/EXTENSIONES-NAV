@@ -1,0 +1,23 @@
+{
+  "id": "7971af14-1305-4c84-9bb4-725a9eb10f3a",
+  "name": "Web-Service",
+  "publisher": "Default publisher",
+  "brief": "",
+  "description": "",
+  "version": "1.0.0.0",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "capabilities": [],
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "13.0.0.0",
+  "application": "13.0.0.0",
+  "idRange": {
+    "from": 50300,
+    "to": 50301
+  },
+  "runtime": "2.4"
+}

@@ -7,7 +7,7 @@ pageextension 50301 CurrencyList extends Currencies
         {
             action(GetExchangeExt)
             {
-                CaptionML = ENU = 'Get Exchange Rate', ESP = 'Recuperar divisa..';
+                CaptionML = ENU = 'Get Exchange Rate', ESP = 'Recuperar divisa.';
                 Promoted = true;
                 PromotedCategory = Process;
                 PromotedIsBig = true;

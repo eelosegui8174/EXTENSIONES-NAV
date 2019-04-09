@@ -14,13 +14,10 @@
   "screenshots": [],
   "platform": "13.0.0.0",
   "application": "13.0.0.0",
-  "idRanges": [
-    {
-      "from": 50302,
-      "to": 50302
-    }
-  ],
-  "contextSensitiveHelpUrl": "https://Ficheros.com/help/",
+  "idRange": {
+    "from": 50302,
+    "to": 50303
+  },
   "showMyCode": true,
-  "runtime": "3.0"
+  "runtime": "2.0"
 }

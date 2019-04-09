@@ -3,19 +3,32 @@ codeunit 50302 GestionFicheros
     trigger OnRun()
     begin
 
-    end;
-
-    //**************************************************************
-    //LECTURAS
-    //**************************************************************
-
-    procedure AbrirFichero() Ruta: Text;
-    begin
+        LeerFichero();
 
     end;
 
-    procedure LeerFichero(Ruta: Text)
+    //**************************************************************
+    //LECTURAS FICHERO txt
+    //**************************************************************
+
+    procedure SeleccionFichero(var Ruta: Text);
     begin
+        Ruta := FileManagement.OpenFileDialog(Seleccion, '', 'TXT');
+    end;
+
+    procedure LeerFichero()
+    var
+        Ruta: Text;
+        Fichero: File;
+        Stream: InStream;
+        Buffer: Text;
+
+    begin
+
+        SeleccionFichero(Ruta);
+
+        //Abrimos y leemos el fichero
+
 
     end;
 
@@ -45,5 +58,6 @@ codeunit 50302 GestionFicheros
 
 
     var
-        myInt: Integer;
+        FileManagement: Codeunit "File Management";
+        Seleccion: TextConst ENU = 'Select file', ESP = 'Selecciona fichero';
 }

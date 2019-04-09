@@ -1,0 +1,24 @@
+{
+  "id": "77a5840c-a9ae-4f1e-badf-d723a945407b",
+  "name": "Cargar imagen producto",
+  "publisher": "Default publisher",
+  "version": "1.0.0.0",
+  "brief": "",
+  "description": "",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "13.0.0.0",
+  "application": "13.0.0.0",
+  "idRange": 
+    {
+      "from": 50304,
+      "to": 50304
+    },
+  "showMyCode": true,
+  "runtime": "2.0"
+}

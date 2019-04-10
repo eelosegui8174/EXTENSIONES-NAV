@@ -1,11 +1,5 @@
 codeunit 50302 GestionFicheros
 {
-    trigger OnRun()
-    begin
-
-        LeerFichero();
-
-    end;
 
     //**************************************************************
     //LECTURAS FICHERO txt
@@ -16,18 +10,27 @@ codeunit 50302 GestionFicheros
         Ruta := FileManagement.OpenFileDialog(Seleccion, '', 'TXT');
     end;
 
-    procedure LeerFichero()
+    procedure LeerFicheroTXT()
     var
         Ruta: Text;
         Fichero: File;
         Stream: InStream;
         Buffer: Text;
+        TempBlod: record TempBlob;
+        lInstream: InStream;
 
     begin
 
         SeleccionFichero(Ruta);
 
         //Abrimos y leemos el fichero
+        TempBlod.Blob.Import(Ruta);
+        TempBlod.Blob.CreateInStream(lInstream);
+        while not lInstream.EOS do begin
+            lInstream.ReadText(Buffer);
+            Message(Buffer);
+        end;
+
 
 
     end;

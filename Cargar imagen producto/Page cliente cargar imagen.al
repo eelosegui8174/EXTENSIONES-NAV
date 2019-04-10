@@ -1,6 +1,12 @@
+dotnet
+{
+    assembly(mscorlib)
+    {
+        type(System.DateTime; MyDateTime) { }
+    }
+}
 pageextension 50304 LoadPicture extends "Item Card" //MyTargetPageId
 {
-
 
     actions
     {
@@ -9,7 +15,7 @@ pageextension 50304 LoadPicture extends "Item Card" //MyTargetPageId
             group(Imagnes)
             {
                 CaptionML = ENU = 'Load Image', ESP = 'Cargar imagen';
-                action(LoadPicture)
+                action(LoadPictureHTTP)
                 {
                     Promoted = true;
                     PromotedCategory = Process;
@@ -27,9 +33,6 @@ pageextension 50304 LoadPicture extends "Item Card" //MyTargetPageId
 
                         Client.Get(DameRuta(), Response);
                         Response.Content().ReadAs(lStr);
-
-
-
                         Modify();
 
                     end;
@@ -37,10 +40,16 @@ pageextension 50304 LoadPicture extends "Item Card" //MyTargetPageId
             }
         }
     }
-    procedure DameRuta() Ruta: Text
+    procedure DameRutaHttp() Ruta: Text
     var
 
+        dialog: Dialog;
+
     begin
+        dialog.Open('Ruta #1############################################');
+        dialog.
         Ruta := 'https://www.tonibike.es/4171-thickbox_default/bicicleta--conor-wrc-comp-disc-blancorojo-.jpg';
     end;
+
+
 }

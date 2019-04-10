@@ -34,7 +34,11 @@ pageextension 50303 LlemadaFichero extends "Customer List"
                     var
                         GestionFicheros: Codeunit GestionFicheros;
                     begin
-                        GestionFicheros.LeerFicheroConDotNet();
+                        //mensaje con todo 
+                        GestionFicheros.LeerFicheroConDotNet(true);
+                        //mensaje de cada linea
+                        GestionFicheros.LeerFicheroConDotNet(false);
+
                     end;
 
                 }

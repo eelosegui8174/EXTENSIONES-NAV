@@ -1,3 +1,16 @@
+
+//Las variables DOTNET SE DECLARAN FUERA
+//MUY IMPORTANTE en app.json poner "target": "Internal"
+
+dotnet
+{
+    assembly(mscorlib)
+    {
+        type(System.IO.StreamReader; DotnetStream) { }
+        type(System.Text.Encoding; DotNetTextEncoding) { }
+    }
+}
+
 codeunit 50302 GestionFicheros
 {
 
@@ -17,7 +30,6 @@ codeunit 50302 GestionFicheros
         Buffer: Text;
         TempBlod: record TempBlob;
         lInstream: InStream;
-
     begin
 
         SeleccionFichero(Ruta);
@@ -31,6 +43,31 @@ codeunit 50302 GestionFicheros
         end;
 
     end;
+
+    procedure LeerFicheroConDotNet()
+    var
+        Ruta: Text;
+        Buffer: Text;
+        lInstream: InStream;
+        DotNetStream: DotNet DotnetStream; //Variable declarada arriba de tipo dotnet  
+        DotNetTextEncoding: DotNet DotNetTextEncoding;  //Variable declarada arriba de tipo dotnet  
+        lFile: File;
+    begin
+
+        SeleccionFichero(Ruta);
+        lFile.Open(Ruta);
+        lFile.CreateInStream(lInstream);
+
+        DotNetStream := DotNetStream.StreamReader(lInstream, DotNetTextEncoding.UTF8);
+        Buffer := DotNetStream.ReadToEnd();
+        DotNetStream.Close();
+
+        lFile.Close();
+
+        message(Buffer);
+
+    end;
+
 
     //IMPORTANTE: Para que funcione DeleteServerFile ... hay que poner en el fichero Json   "target": "Internal"
     procedure BorrarFichero(Ruta: Text)
@@ -54,7 +91,6 @@ codeunit 50302 GestionFicheros
     begin
 
     end;
-
 
 
 

@@ -75,6 +75,7 @@ codeunit 50302 GestionFicheros
         If opc = 2 then begin
             Seguir := true;
 
+
             while Seguir do begin
                 Buffer := DotNetStream.ReadLine();
                 IF Buffer = '' then

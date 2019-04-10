@@ -44,7 +44,7 @@ codeunit 50302 GestionFicheros
 
     end;
 
-    procedure LeerFicheroConDotNet(Todo: Boolean)
+    procedure LeerFicheroConDotNet()
     var
         Ruta: Text;
         Buffer: Text;
@@ -53,21 +53,31 @@ codeunit 50302 GestionFicheros
         DotNetTextEncoding: DotNet DotNetTextEncoding;  //Variable declarada arriba de tipo dotnet  
         lFile: File;
         Seguir: Boolean;
+        Opc: Integer;
+
     begin
+
+        opc := StrMenu('&Todo,&Por línea', 3);
+
+
+
 
         SeleccionFichero(Ruta);
         lFile.Open(Ruta);
         lFile.CreateInStream(lInstream);
 
         DotNetStream := DotNetStream.StreamReader(lInstream, DotNetTextEncoding.UTF8);
-        IF todo then begin
+
+        IF opc = 1 then begin
 
             Buffer := DotNetStream.ReadToEnd();
             DotNetStream.Close();
             lFile.Close();
 
             message(Buffer);
-        END else begin
+        END;
+
+        If opc = 2 then begin
             Seguir := true;
 
             while Seguir do begin

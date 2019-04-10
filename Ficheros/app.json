@@ -19,6 +19,7 @@
     "to": 50303
   },
   "showMyCode": true,
-  "runtime": "2.0"
+  "runtime": "2.0",
+  "target": "Internal"
  
 }

@@ -13,7 +13,6 @@ codeunit 50302 GestionFicheros
     procedure LeerFicheroTXT()
     var
         Ruta: Text;
-        Fichero: File;
         Stream: InStream;
         Buffer: Text;
         TempBlod: record TempBlob;
@@ -31,13 +30,14 @@ codeunit 50302 GestionFicheros
             Message(Buffer);
         end;
 
-
-
     end;
 
+    //IMPORTANTE: Para que funcione DeleteServerFile ... hay que poner en el fichero Json   "target": "Internal"
     procedure BorrarFichero(Ruta: Text)
+    var
+        Correcto: Boolean;
     Begin
-
+        Correcto := FileManagement.DeleteServerFile(Ruta);
     End;
 
 

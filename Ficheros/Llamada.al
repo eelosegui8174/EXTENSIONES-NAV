@@ -6,7 +6,7 @@ pageextension 50303 LlemadaFichero extends "Customer List"
         {
             action(LeerFichero)
             {
-
+                Caption = 'Leer fichero .TXT';
                 Promoted = true;
                 PromotedCategory = Process;
                 PromotedIsBig = true;
@@ -15,9 +15,7 @@ pageextension 50303 LlemadaFichero extends "Customer List"
                 var
                     GestionFicheros: Codeunit GestionFicheros;
                 begin
-                    GestionFicheros.LeerFichero();
-                    MESSAGE(FORMAT(Name));
-
+                    GestionFicheros.LeerFicheroTXT();();
                 end;
 
             }

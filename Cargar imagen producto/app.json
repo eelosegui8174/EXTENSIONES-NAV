@@ -20,5 +20,6 @@
       "to": 50304
     },
   "showMyCode": true,
-  "runtime": "2.0"
+  "runtime": "2.0",
+  "target": "Internal"
 }

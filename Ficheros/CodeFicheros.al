@@ -60,8 +60,6 @@ codeunit 50302 GestionFicheros
         opc := StrMenu('&Todo,&Por línea', 3);
 
 
-
-
         SeleccionFichero(Ruta);
         lFile.Open(Ruta);
         lFile.CreateInStream(lInstream);
@@ -71,9 +69,6 @@ codeunit 50302 GestionFicheros
         IF opc = 1 then begin
 
             Buffer := DotNetStream.ReadToEnd();
-            DotNetStream.Close();
-            lFile.Close();
-
             message(Buffer);
         END;
 
@@ -88,6 +83,9 @@ codeunit 50302 GestionFicheros
                     Message(buffer);
             end;
         end;
+
+        DotNetStream.Close();
+        lFile.Close();
 
     end;
 

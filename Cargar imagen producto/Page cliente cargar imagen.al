@@ -4,6 +4,7 @@ pageextension 50304 LoadPicture extends "Item Card" //MyTargetPageId
     {
         addafter("No.")
         {
+            //Para probar a meter aqui la ruta de la imagen a cargar https://......
             field(RutaImagen; RutaImagen) { }
 
         }
@@ -93,7 +94,7 @@ pageextension 50304 LoadPicture extends "Item Card" //MyTargetPageId
         Sobreescribir: Label 'Se sustituirá la imagen existente. ¿Quiere continuar?';
     begin
         TESTFIELD("No.");
-        TESTFIELD(Description);
+        //TESTFIELD(Description);
 
         IF Picture.COUNT > 0 THEN
             IF NOT CONFIRM(SobreEscribir) THEN

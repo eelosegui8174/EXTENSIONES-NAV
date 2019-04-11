@@ -14,12 +14,11 @@ report 50206 Mov_Cliente
         {
             //para poder filtrar por estos campos
             RequestFilterFields = "No.";
-
             column(Filtros; Customer.GetFilters()) { }
             column(CodCliente; "No.") { }
             column(Nombre; Name) { }
-            column(Dir1;Address) { }
-            column(dir2;"Address 2") { }
+            column(Dir1; Address) { }
+            column(dir2; "Address 2") { }
             column(Usuario; userid) { }
 
             //MOVIMIENTOS DE PRODUCTO PARA EL CLIENTE
@@ -58,7 +57,7 @@ report 50206 Mov_Cliente
     labels
     {
         label(ReportCaption; ENU = 'CUSTOMER LEDGER ENTRY', ESP = 'MOVIMIENTOS DE CLIENTE')
-       label(Filtro; ENU = 'Filters: ', ESP = 'Filtros: ')
+        label(Filtro; ENU = 'Filters: ', ESP = 'Filtros: ')
     }
 
     var
@@ -66,5 +65,6 @@ report 50206 Mov_Cliente
         eProducto: Record Item;
         NombreCliente: Text;
 
-
+        vARNUEVA: Decimal;
+        VAR2: Integer;
 }

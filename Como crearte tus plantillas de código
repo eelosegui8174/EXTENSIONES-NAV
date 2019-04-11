@@ -1,2 +1,35 @@
 https://github.com/Microsoft/AL/blob/master/snippets/al.json
 
+Desde visual Code podemos generar nuestras propias plantillas de código para agilizar la programación.
+Para ello
+
+1º pulsar F1 y se nos abre la pantalla de comandos en la parte superior
+2º Escribimos Preferencias : Configurar fragmentos de usuario
+3º aqui podemos introducir los fragmentos personalizados (Ejemplos en el enlace de arriba)
+
+Ejemplo
+
+ "Snippet: Case Of": {
+
+        "prefix": "tcaseof",    //Alias en el que al ecribirlo en el código nos propondra la ayuda y nos traera el fragmento de código
+
+        "body": [
+
+            "case ${1:Expression} of",
+		      	"\t${2:ExpressionOrRange}:",		   //  \t Es una tabulación	
+            "\t$0",  //parece que es una línea de espacio en blanco tabulada
+            "\t\t${3:Begin}",                  // \t\t  son dos tabulaciones
+            "\t\t${4:End;}",
+
+            "\t${5:ExpressionOrRange}:",
+            "\t$0",  //parece que es una línea de espacio en blanco tabulada
+            "\t\t${3:Begin}",
+		      	"\t\t${4:End;}",
+
+
+            "end;"
+
+        ],
+
+        "description": "Snippet: Case Of"
+},

@@ -22,11 +22,9 @@ pageextension 50202 CamposPageCLiente extends "Customer Card"
                     MovCLiente.run;
                 end;
             }
+
         }
     }
 
 
 }
-
-
-

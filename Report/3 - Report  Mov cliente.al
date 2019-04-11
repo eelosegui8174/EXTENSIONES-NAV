@@ -68,3 +68,5 @@ report 50206 Mov_Cliente
         vARNUEVA: Decimal;
         VAR2: Integer;
 }
+
+tac

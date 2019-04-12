@@ -9,27 +9,184 @@ Para ello
 
 Ejemplo
 
- "Snippet: Case Of": {
+ {
+	// Place your snippets for al here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// 
+//#region LISTADO FUNCIONES	
+"Snippet : Mis funciones":{
 
-        "prefix": "tcaseof",    //Alias en el que al ecribirlo en el código nos propondra la ayuda y nos traera el fragmento de código
+	"prefix": "MisFunciones",
+	"body":  [
+			"\t${0:FUNCIONES}",
+			"\t\t${1:GenerarDiarioProducto}",
+			"\t\t${2:GenerarDiarioProducto1}",
+			"\t\t${3:GenerarDiarioProducto2}",
+			"\t\t${4:GenerarDiarioProducto3}",
+			"\t\t${4:GenerarDiarioProducto4}",
+			"\t\t${1:GenerarDiarioProducto}",
+			"\t\t${2:GenerarDiarioProducto1}",
+			"\t\t${3:GenerarDiarioProducto2}",
+			"\t\t${4:GenerarDiarioProducto3}",
+			"\t\t${4:GenerarDiarioProducto4}",
+	],
+	"description": "Funciones que tengo memorizadas"
 
+	},
+//#endregion LISTADO FUNCIONES
+	
+//#region VARIABLES
+"Snippet: Dotnet": {
+	"prefix": "miDotNet",
+	"body": [
+		"dotnet",
+        "\t{",
+    	"\t\t assembly(mscorlib)",
+        "\t\t\t{",
+		"\t\t\t\ttype(System.IO.StreamReader; DotnetStream) { }",
+		"\t\t\t\ttype(System.Text.Encoding; DotNetTextEncoding) { }",
+		"\t\t\t}",
+		"\t\t}",
+		"",
+
+		"//EJMPLO DECLARACION:",
+		"//-------------------",
+		"//DotNetStream: DotNet DotnetStream; //Variable declarada arriba de tipo dotnet", 
+        "//DotNetTextEncoding: DotNet DotNetTextEncoding;  //Variable declarada arriba de tipo dotnet" 
+
+		],
+	"description": "Ejemplo variable DotNet"
+},
+"Snippet: campo decimal": {
+	"prefix": "miCampoDecimal",
+	"body": [
+		"field (Número; Nombre; Decimal)",
+		"{",			
+		"\t${0:Caption = 'Texto';}",  //si  usamos  fichero de traducciones	o no queremos otro idioma		
+		"\t${1:CaptionML = ENU = 'Text', ESP= 'Texto';}",  //si no usamos  fichero de traducciones
+		"\t${2:Editable = True;}",
+		"\t${3:// NotBlank = false;} //Si no permitimos que se quede vacio",
+		"\t${4:// DecimalPlaces = 0:2;}",
+		"\t${5:// MinValue = 0;}",
+		"\t${6:// MaxValue = 'max' }",
+		"}"
+		
+	],
+	"description": "mis opciones"
+},
+"Snippet: campo integer": {
+	"prefix": "miCampoDecimal",
+	"body": [
+		"field (Número; Nombre; Integer)",
+		"{",	
+	    "\t${0:Caption = 'Texto';}",  //si  usamos  fichero de traducciones	o no queremos otro idioma		
+		"\t${1:CaptionML = ENU = 'Text', ESP= 'Texto';}",  //si no usamos  fichero de traducciones
+		"\t${2:Editable = True;}",
+		"\t${3:// NotBlank = false;} //Si no permitimos que se quede vacio",
+		"\t${4:// DecimalPlaces = 0:2;}",
+		"\t${5:// MinValue = 0;}",
+		"\t${6:// MaxValue = 'max' }",
+		"}"
+	],
+	"description": "mis opciones"
+},
+//#endregion VARIABLES
+
+//#region CAMPOS CALCULADOS
+	"Snippet: campo flowfieldSUM": { 
+        "prefix": "miCampoflowfieldSUM",
         "body": [
 
-            "case ${1:Expression} of",
-		      	"\t${2:ExpressionOrRange}:",		   //  \t Es una tabulación	
-            "\t$0",  //parece que es una línea de espacio en blanco tabulada
-            "\t\t${3:Begin}",                  // \t\t  son dos tabulaciones
-            "\t\t${4:End;}",
-
-            "\t${5:ExpressionOrRange}:",
-            "\t$0",  //parece que es una línea de espacio en blanco tabulada
-            "\t\t${3:Begin}",
-		      	"\t\t${4:End;}",
-
-
-            "end;"
+            "field (Número; Nombre; Decimal)",
+			"{",			
+			"\t${1:CaptionML = ENU = '', ESP= '';}",
+			"\t${2:Editable = True;}",			 
+			"\t${4:FieldClass = FLowfield;}",
+		    "\t${5:CalcFormula = Sum('Tabla Origen'.campo WHERE ('Campo tabla origen'=FIELD(mi campo),Campo tabla origen'=FIELD(mi campo),'Campo tabla origen'=FILTER(<>'')));",
+            "}"
 
         ],
+        "description": "Flowfield SUM"
+	},
+	"Snippet: campo flowfieldCOUNT": {
+        "prefix": "miCampoflowfieldSUM",
+        "body": [
 
-        "description": "Snippet: Case Of"
+            "field (${1:Numero}; ${2:Nombre}; Decimal)",
+			"{",
+			
+			"\t${1:CaptionML = ENU = '', ESP= '';}",
+			"\t${2:Editable = True;}",			 
+			"\t${4:FieldClass = FLowfield;}",
+		    "\t${5:CalcFormula = Count('Tabla Origen' WHERE ('Campo tabla origen'=FIELD(mi campo),Campo tabla origen'=FIELD(mi campo),'Campo tabla origen'=FILTER(<>'')));",
+            "}"
+
+        ],
+        "description": "Flowfield SUM"
+	},
+	"Snippet: campo flowfieldEXIST": {
+        "prefix": "miCampoflowfieldSUM",
+        "body": [
+
+            "field (${1:Numero}; ${2:Nombre}; Decimal)",
+			"{",
+			
+			"\t${1:CaptionML = ENU = '', ESP= '';}",
+			"\t${2:Editable = True;}",			 
+			"\t${4:FieldClass = FLowfield;}",
+		    "\t${5:CalcFormula = exist('Tabla Origen' WHERE ('Campo tabla origen'=FIELD(mi campo),Campo tabla origen'=FIELD(mi campo),'Campo tabla origen'=FILTER(<>'')));",
+            "}"
+
+        ],
+        "description": "Flowfield SUM"
+	},
+//#endregion CAMPOS CALCULADOS
+
+//#region CODIGO IF/REPEAT/WHILE...
+"Snippet: Case Of": 
+{
+	"prefix": "miCase",
+	"body": [
+		"case ${1:'Variable o campo'} of",
+		"\t${2:'Valor'}:",			
+		"\t$0",//parece que es una línea de espacio en blanco tabulada
+		"\t\t${3:Begin}",
+		"\t\t\t //CODIGO",
+		"\t\t${4:End;}",
+		"\t${5:'Valor'}:",
+		"\t\t${6:Begin}",
+		"\t\t\t //CODIGO",
+		"\t\t${7:End;}",
+		"\t${8:else BEGIN}",
+		"\t\t //CODIGO",
+		"\t${9:END;}",
+		"end;"
+	],
+	"description": "Snippet: Case Of"
 },
+
+"Snippet: while": {
+	"prefix": "miWhile",
+	"body": [
+		"while ${1:'Condicion'} do begin",
+		"\t\t //CODIGO",
+		"\t${2:end;}",
+	]
+}
+//#endregion CODIGO IF/REPEAT/WHILE...
+
+
+
+
+
+}

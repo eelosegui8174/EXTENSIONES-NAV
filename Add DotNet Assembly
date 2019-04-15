@@ -1,0 +1,14 @@
+Si queremos usar ensamblados DotNet que no sea mscorlib.dll tendremos que añadirlos manualmente.
+Si por ejemplo queremos usar System, tendremos que indicar donde estan los ensamblados.
+
+dotnet
+    {
+        assembly(System)
+        {         
+        }
+    }
+
+/***********************
+Ruta donde lo explica 
+//**********************
+https://demiliani.com/2018/07/11/dynamics-365-business-central-on-premise-extension-for-printing-external-documents/

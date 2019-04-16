@@ -9,27 +9,388 @@ Para ello
 
 Ejemplo
 
- "Snippet: Case Of": {
+ 
+       {
+	// Place your snippets for al here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// 
+    //	"\t$0", línea de espacio en blanco tabulada
+//Campos añadidos
+//----------------------------------------------------------------------------------
+//DotNet
+//Integer
+//Decimal	
+//Option
+//GUID
+//FlowFieldSum
+//FlowFieldCount
+//FlowFieldExist
+//FlowFieldMin
+//FlowFieldMax
+//FlowFieldLookUp
 
-        "prefix": "tcaseof",    //Alias en el que al ecribirlo en el código nos propondra la ayuda y nos traera el fragmento de código
+//TableRelation
+//TableRelationCondicionada
 
+//Action
+
+//DialogConfirm
+
+
+//#region LISTADO FUNCIONES	
+"Snippet : Mis funciones":{
+
+	"prefix": "MisFunciones",
+	"body":  [
+			"\tFUNCIONES",
+			"\t-------------------------",
+			"\t\t GenerarDiarioProducto",
+			"\t\t GenerarDiarioProducto1",
+			"\t\t GenerarDiarioProducto2",			
+			"\tCAMPOS",
+			"\t-------------------------",			 
+			"\t\t Decimal (miCampoDecimal)",
+			"\t\t Integer (miCampoInteger)",
+			"\t\t Option  (miCampoOption)",
+			"\t\t GUID  (miCampoGUID)",
+			"\t\t Campo SUM  (miFLowFieldSum)",
+			"\t\t Campo COUNT  (miFLowFieldCount)",
+			"\t\t Campo Exist  (miFLowFieldExist)",
+			"\t\t Campo Min  (miFLowFieldMin)",
+			"\t\t Campo Max  (miFLowFieldMax)",
+			"\t\t Campo LoolkUp  (miFLowFieldLookUp)",
+			"\t\t Campo TableRelation  (miTableRealtion)",
+			"\t\t Campo TableRelationCondicionada  (miTableRealtionCondicionada)",
+			"\tCODIGO FUENTE",
+			"\t\t Action",
+			"\tTIPOS DE PAGINAS",
+			"\t\t Dialog confirm (MiDialogConfirm)"
+	],
+	"description": "Funciones que tengo memorizadas"
+
+	},
+//#endregion LISTADO FUNCIONES
+//#region CAMPOS 
+	"Snippet: Dotnet": {
+		"prefix": "miDotNet",
+		"body": [
+			"dotnet",
+			"\t{",
+			"\t\t assembly(mscorlib)",
+			"\t\t\t{",
+			"\t\t\t\ttype(System.IO.StreamReader; DotnetStream) { }",
+			"\t\t\t\ttype(System.Text.Encoding; DotNetTextEncoding) { }",
+			"\t\t\t}",
+			"\t\t}",
+			"",
+
+			"//EJMPLO DECLARACION:",
+			"//-------------------",
+			"//DotNetStream: DotNet DotnetStream; //Variable declarada arriba de tipo dotnet", 
+			"//DotNetTextEncoding: DotNet DotNetTextEncoding;  //Variable declarada arriba de tipo dotnet" 
+
+			],
+		"description": "Ejemplo variable DotNet"
+	},
+	"Snippet: campo decimal": {
+		"prefix": "miCampoDecimal",
+		"body": [
+			"field (Número; Nombre; Decimal)",
+			"{",			
+			"\t${0://Caption = 'Texto';}//si  usamos  fichero de traducciones o no queremos otro idioma",	
+			"\t${1:CaptionML = ENU = 'Text', ESP= 'Texto';} //si no usamos  fichero de traducciones",  
+			"\t${2:Editable = True;}",
+			"\t${3:// NotBlank = false;} //Si no permitimos que se quede vacio",
+			"\t${4:// DecimalPlaces = 0:2;} //Número de decimales que queremos que tenga (0:0) sin restricción",
+			"\t${5:// InitValue = 0;}",
+			"\t${6:// MinValue = 0;}",
+			"\t${7:// MaxValue = 'max' }",
+			"}"
+			
+		],
+		"description": "mis opciones"
+	},
+	"Snippet: campo integer": {
+		"prefix": "miCampoDecimal",
+		"body": [
+			"field (Número; Nombre; Integer)",
+			"{",	
+			"\t${0://Caption = 'Texto';}//si  usamos  fichero de traducciones o no queremos otro idioma",	
+			"\t${1:CaptionML = ENU = 'Text', ESP= 'Texto';} //si no usamos  fichero de traducciones",  
+			"\t${2:Editable = True;}",
+			"\t${3:// NotBlank = false;} //Si no permitimos que se quede vacio",
+			"\t${4:// DecimalPlaces = 0:2;} //Número de decimales que queremos que tenga (0:0) sin restricción",
+			"\t${5:// MinValue = 0;} ",
+			"\t${6:// MaxValue = 'max' }",
+			"}"
+		],
+		"description": "Mi campo Decimal"
+	},  
+	"Snippet: campo Option": {
+		"prefix": "miCampoOption",
+		"body": [
+			"field(id; 'Nombre'; Option)",
+			"{",
+			"\t${0://Caption = 'Texto';}//si  usamos  fichero de traducciones o no queremos otro idioma",	
+			"\t${1:CaptionML = ENU = 'Text', ESP= 'Texto';} //si no usamos  fichero de traducciones",  
+			"\t${2:Editable = True;}",
+			"\t${3:OptionMembers = 'Opcion1,Opcion2,Opcion3...'}; //Las opciones entre comillas dobles si tiene espacios", 
+			"\t${4: OptionCaptionML = ENU = 'Option 1, Option 2', ESP = 'Opción 1, Opción2';};", 
+			"}",
+		],
+		"description": "Mi campo Option"
+	},  
+	"Snippet: campo GUID": {
+		"prefix": "miCampoGUID",
+		"body": [
+			"field(id; 'Nombre'; GUID)",
+			"{",
+			"\t${0://Caption = 'Texto';}//si  usamos  fichero de traducciones o no queremos otro idioma",	
+			"\t${1:CaptionML = ENU = 'Text', ESP= 'Texto';} //si no usamos  fichero de traducciones",  
+			"\t${2:Editable = false;}",
+			"\t$0",
+			"\t//Ejemplo de como tratarlo",
+			"\t//IF NOT ISNULLGUID('Nombre') THEN BEGIN",			 
+			"}",
+		],
+		"description": "Mi campo Option"
+	},  
+	"Snippet: campo flowfieldSUM": { 
+        "prefix": "miCampoflowfieldSUM",
         "body": [
 
-            "case ${1:Expression} of",
-		      	"\t${2:ExpressionOrRange}:",		   //  \t Es una tabulación	
-            "\t$0",  //parece que es una línea de espacio en blanco tabulada
-            "\t\t${3:Begin}",                  // \t\t  son dos tabulaciones
-            "\t\t${4:End;}",
-
-            "\t${5:ExpressionOrRange}:",
-            "\t$0",  //parece que es una línea de espacio en blanco tabulada
-            "\t\t${3:Begin}",
-		      	"\t\t${4:End;}",
-
-
-            "end;"
+            "field (Número; Nombre; Decimal)",
+			"{",			
+			"\t${0://Caption = 'Texto';}//si  usamos  fichero de traducciones o no queremos otro idioma",	
+			"\t${1:CaptionML = ENU = 'Text', ESP= 'Texto';} //si no usamos  fichero de traducciones",  
+			"\t${2:Editable = True;}",			 
+			"\t${4:FieldClass = FLowfield;}",
+		    "\t${5:CalcFormula = Sum('Tabla Origen'.campo WHERE ('Campo tabla origen'=FIELD(mi campo),Campo tabla origen'=FIELD(mi campo),'Campo tabla origen'=FILTER(<>'')));};",
+            "}"
 
         ],
+        "description": "Flowfield SUM"
+	},
+	"Snippet: campo flowfieldCOUNT": {
+        "prefix": "miCampoflowfieldCount",
+        "body": [
 
-        "description": "Snippet: Case Of"
+            "field (${1:Numero}; ${2:Nombre}; Decimal)",
+			"{",			
+			"\t${0://Caption = 'Texto';}//si  usamos  fichero de traducciones o no queremos otro idioma",	
+			"\t${1:CaptionML = ENU = 'Text', ESP= 'Texto';} //si no usamos  fichero de traducciones",  
+			"\t${2:Editable = True;}",			 
+			"\t${4:FieldClass = FLowfield;}",
+		    "\t${5:CalcFormula = Count('Tabla Origen' WHERE ('Campo tabla origen'=FIELD(mi campo),Campo tabla origen'=FIELD(mi campo),'Campo tabla origen'=FILTER(<>'')));};",
+            "}"
+
+        ],
+        "description": "Flowfield COUNT"
+	},
+	"Snippet: campo flowfieldEXIST": {
+        "prefix": "miCampoflowfieldExist",
+        "body": [
+
+            "field (${1:Numero}; ${2:Nombre}; Decimal)",
+			"{",
+			"\t${0://Caption = 'Texto';}//si  usamos  fichero de traducciones o no queremos otro idioma",	
+			"\t${1:CaptionML = ENU = 'Text', ESP= 'Texto';} //si no usamos  fichero de traducciones",  
+			"\t${2:Editable = True;}",			 
+			"\t${4:FieldClass = FLowfield;}",
+		    "\t${5:CalcFormula = exist('Tabla Origen' WHERE ('Campo tabla origen'=FIELD(mi campo),Campo tabla origen'=FIELD(mi campo),'Campo tabla origen'=FILTER(<>'')));};",
+            "}"
+
+        ],
+        "description": "Flowfield EXIST"
+	},
+	"Snippet: campo flowfieldMin": { 
+        "prefix": "miCampoflowfieldMin",
+        "body": [
+
+            "field (Número; Nombre; Decimal)",
+			"{",			
+			"\t${0://Caption = 'Texto';}//si  usamos  fichero de traducciones o no queremos otro idioma",	
+			"\t${1:CaptionML = ENU = 'Text', ESP= 'Texto';} //si no usamos  fichero de traducciones",  
+			"\t${2:Editable = True;}",			 
+			"\t${4:FieldClass = FLowfield;}",
+		    "\t${5:CalcFormula = Min('Tabla Origen'.campo WHERE ('Campo tabla origen'=FIELD(mi campo),Campo tabla origen'=FIELD(mi campo),'Campo tabla origen'=FILTER(<>'')));};",
+            "}"
+
+        ],
+        "description": "Flowfield Min"
+	},
+	"Snippet: campo flowfieldMax": { 
+        "prefix": "miCampoflowfieldMax",
+        "body": [
+
+            "field (Número; Nombre; Decimal)",
+			"{",			
+			"\t${0://Caption = 'Texto';}//si  usamos  fichero de traducciones o no queremos otro idioma",	
+			"\t${1:CaptionML = ENU = 'Text', ESP= 'Texto';} //si no usamos  fichero de traducciones",  
+			"\t${2:Editable = True;}",			 
+			"\t${4:FieldClass = FLowfield;}",
+		    "\t${5:CalcFormula = Max('Tabla Origen'.campo WHERE ('Campo tabla origen'=FIELD(mi campo),Campo tabla origen'=FIELD(mi campo),'Campo tabla origen'=FILTER(<>'')));};",
+            "}"
+
+        ],
+        "description": "Flowfield Max"
+	},
+	
+	"Snippet: campo TableRelation": {
+		"prefix": "miTableRealtion",
+		"body": [
+			"field (Número; Nombre; Code[20])",
+			"{",			
+			"\t${0://Caption = 'Texto';}//si  usamos  fichero de traducciones o no queremos otro idioma",	
+			"\t${1:CaptionML = ENU = 'Text', ESP= 'Texto';} //si no usamos  fichero de traducciones",  
+			"\t${2:Editable = True;}",
+			"\tTableRelation = 'Tabla relación'.'campo' WHERE ('Campo destino'=CONST('Valor'),'Campo destino'=FIELD(Micampo))",			
+			"tValidateTableRelation = true",
+			"}"
+			
+		],
+		"description": "mi campo TableRelation"
+	},
+	"Snippet: campo TableRelationCondicionada": {
+		"prefix": "miTableRealtionCondicionada",
+		"body": [
+			"field (Número; Nombre; Code[20])",
+			"{",			
+			"\t${0://Caption = 'Texto';}//si  usamos  fichero de traducciones o no queremos otro idioma",	
+			"\t${1:CaptionML = ENU = 'Text', ESP= 'Texto';} //si no usamos  fichero de traducciones",  
+			"\t${2:Editable = True;}",
+			"\tTableRelation = IF ('Campo origen'=CONST('valor'),'Campo origen'=FILTER(<>'valor')) 'Tabla relación'.'campo' WHERE ('Campo destino'=CONST('Valor'),'Campo destino'=FIELD(Micampo))", 
+			"\tELSE IF ('Campo origen'=CONST('valor'),'Campo origen'=FILTER(='valor')) 'Tabla relación'.'campo' WHERE ('Campo destino'=CONST('Valor'),'Campo destino'=FIELD(Micampo))",			 			 
+			"tValidateTableRelation = true",
+			"}"
+			
+		],
+		"description": "mi campo TableRelation condicionada"
+	},
+//#endregion CAMPOS 
+
+//#region CODIGO IF/REPEAT/WHILE...
+"Snippet: Case Of": 
+{
+	"prefix": "miCase",
+	"body": [
+		"case ${1:'Variable o campo'} of",
+		"\t${2:'Valor'}:",					
+		"\t\tBegin",
+		"\t\t\t //CODIGO",
+		"\t\tEnd;",
+		"\t${5:'Valor'}:",
+		"\t\tBegin",
+		"\t\t\t //CODIGO",
+		"\t\tEnd;",
+		"\telse BEGIN",
+		"\t\t //CODIGO",
+		"\tEND;",
+		"end;"
+	],
+	"description": "Snippet: Case Of"
 },
+
+"Snippet: while": {
+	"prefix": "miWhile",
+	"body": [
+		"while ${1:'Condicion'} do begin",
+		"\t\t //CODIGO",
+		"\tend;",
+	]
+},
+//#endregion CODIGO IF/REPEAT/WHILE...
+
+//#region Codigo fuente
+"Snippet: Action": {
+	"prefix": "miAction",
+	"body": [
+		"action ('Nombre')",
+		"{",	
+		"\t${1://Caption = 'Texto';}//si  usamos  fichero de traducciones o no queremos otro idioma",	
+		"\t${2:CaptionML = ENU = 'Text', ESP= 'Texto';} //si no usamos  fichero de traducciones",  
+		"\t${3:Promoted = true;}",
+		"\t${4:PromotedCategory = 'Categoria';} //New,Process,Report,Category4,Category5...Category10",
+		"\t${5:PromotedIsBig = true;} //Número de decimales que queremos que tenga (0:0) sin restricción",
+		"\t${6:Image = 'Imagen';} ",
+		"\ttrigger OnAction()",
+		"\tVar",
+		"\t //variables locales",
+		"\t begin",
+		"\t //Código",
+		"\t end;",
+		"}"
+	],
+	"description": "Mi Action"
+},  
+//#endregion  Codigo fuente
+
+//#region PAGINAS
+"Snippet: Page DialogConfirm": {
+	"prefix": "miDialogConfirm",
+	"body": [
+		
+	"page ${0}'número' 'nombre'",
+	"{",
+	"\tPageType = ConfirmationDialog;",
+	"\tUsageCategory = Lists;",
+	"\tApplicationArea = All;",
+	"\t",
+	"\tlayout",
+	"\t{",
+	"\t\tArea(Content)",
+	"\t\t{",
+	"\t\t\tgroup('Pestaña1')",
+	"\t\t\t{",
+	"\t\t\t\tfield(var1; 'descripcón') { }",
+	"\t\t\t\tfield(var1; 'descripcón') { }",
+	"\t\t\t}",
+
+	"\t\t\tgroup('Pestaña2')",
+	"\t\t\t{",
+	"\t\t\t\tfield(var1; 'descripcón') { }",
+	"\t\t\t\tfield(var1; 'descripcón') { }",
+	"\t\t\t}",
+	"\t\t}",
+	"\t}",
+	"\t",	
+	"//Función que se llama desde el Origen para recoger los valores introducidos",
+	"\tprocedure Retorno_Valores(var lvar1: Text; var lvar2: Text; var lvar3: Integer; var lvar4: Decimal)",
+	"\tbegin",
+	"\t\tlvar1 := var1;",
+	"\t\tlvar2 := var2;",
+	"\t\tlvar3 := var3;",
+	"\t\tlvar4 := var3;",
+	"\tend;",
+	"\t",
+	"\tvar",
+	"\t\tvar1: Text;",
+	"\t\tvar2: text;",
+	"\t\tvar3: Integer;",
+	"\t\tvar4: Decimal;",
+	"}",
+	"\t",
+	"\t",
+	"//LLAMADA",
+	"//pagina.LookupMode;",
+	"//if pagina.RunModal() = Action::Yes then begin",
+	"\t //pagina.Retorno_Valores(var1, var2, var3, var4);  //la funcion devulve los valores",
+	"\t //message(var1 + ' ' + var2 + ' ' + format(var3) + '  ' + format(var4))",
+	"//end;",
+],
+"description": "Mi página Dialog confirm"
+},  
+//#endregion PAGINAS
+
+}
+

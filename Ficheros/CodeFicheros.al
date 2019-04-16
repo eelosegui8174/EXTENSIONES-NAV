@@ -1,15 +1,5 @@
 
-//Las variables DOTNET SE DECLARAN FUERA
-//MUY IMPORTANTE en app.json poner "target": "Internal"
-
-dotnet
-{
-    assembly(mscorlib)
-    {
-        type(System.IO.StreamReader; DotnetStream) { }
-        type(System.Text.Encoding; DotNetTextEncoding) { }
-    }
-}
+//Las variables DotNet se declaran en el fichero Decalraciones DotNet.al
 
 codeunit 50302 GestionFicheros
 {
@@ -64,26 +54,13 @@ codeunit 50302 GestionFicheros
         lFile.Open(Ruta);
         lFile.CreateInStream(lInstream);
 
-        DotNetStream := DotNetStream.StreamReader(lInstream, DotNetTextEncoding.UTF8);
-
         IF opc = 1 then begin
 
             Buffer := DotNetStream.ReadToEnd();
             message(Buffer);
         END;
 
-        If opc = 2 then begin
-            Seguir := true;
 
-
-            while Seguir do begin
-                Buffer := DotNetStream.ReadLine();
-                IF Buffer = '' then
-                    Seguir := false
-                else
-                    Message(buffer);
-            end;
-        end;
 
         DotNetStream.Close();
         lFile.Close();

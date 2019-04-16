@@ -39,8 +39,8 @@ pageextension 50303 LlemadaFichero extends "Customer List"
                     end;
 
                 }
-            }
 
+            }
         }
     }
 }

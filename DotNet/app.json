@@ -15,8 +15,8 @@
   "platform": "13.0.0.0",
   "application": "13.0.0.0",
   "idRange": {
-    "from": 50302,
-    "to": 50305
+    "from": 50306,
+    "to": 50307
   },
   "showMyCode": true,
   "runtime": "2.0",

@@ -1,8 +1,5 @@
 
-
-
-
-codeunit 50304 InputBox
+codeunit 50306 InputBox
 {
 
     trigger OnRun()

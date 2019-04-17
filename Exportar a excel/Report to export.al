@@ -1,4 +1,4 @@
-report 50308 ItemToExport
+report 50308 Export_Item_To_Excel
 {
     UsageCategory = Administration;
     ApplicationArea = All;
@@ -63,7 +63,7 @@ report 50308 ItemToExport
 
     procedure CreateExcelBook()
     begin
-
+        ExcelBuffer.CreateBookAndOpenExcel('', 'Book', '', '', UserId);
     end;
 
     trigger OnInitReport()

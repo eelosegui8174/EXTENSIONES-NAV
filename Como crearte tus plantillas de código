@@ -7,6 +7,15 @@ Para ello
 2º Escribimos Preferencias : Configurar fragmentos de usuario
 3º aqui podemos introducir los fragmentos personalizados (Ejemplos en el enlace de arriba)
 
+//**** EL FICHERO SE GENERA EN C:\Users\Yakon11\AppData\Roaming\Code\User\snippets
+//Podemos generar mas ficheros, por ejemplo una con ayuda de generar campas, tablas, actions, 
+//Otro de código con funciones etc..... estos nuevos ficheros se generan
+   //1º pulsamos F1 selecionamos Preferencias : Configurar fragmentos de usuario
+   //2º nos da la opción de Nuevo archivo de fragmento globales. Lo podemos guardar en la carpeta que queramos. 
+   //la forma de crearlo es la misma que con el Json, lo Unico, le da otro nombre, no podemos renombrarlo como 
+   //json por que si no se lia con al AL.JSON
+   
+
 Ejemplo
 
  

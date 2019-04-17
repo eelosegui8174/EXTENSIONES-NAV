@@ -45,8 +45,12 @@ report 50308 Export_Item_To_Excel
     end;
 
     procedure MakeExcelDataHeader()
+    var
+        Codigo: Text;
     begin
-        ExcelBuffer.AddColumn(Productos.FieldCaption("No."), false, '', true, false, true, '', ExcelBuffer."Cell Type"::Text);
+        Codigo := Productos.FieldCaption("No.");
+        //   ExcelBuffer.AddColumn(Productos.FieldCaption("No."), false, '', true, false, true, '', ExcelBuffer."Cell Type"::Text);
+        ExcelBuffer.AddColumn(Codigo, false, '', true, false, true, '', ExcelBuffer."Cell Type"::Text);
         ExcelBuffer.AddColumn(Productos.FieldCaption(Description), false, '', true, false, true, '', ExcelBuffer."Cell Type"::Text);
 
         ExcelBuffer.AddColumn(MovProducto.FieldCaption("Document Date"), false, '', true, false, true, '', ExcelBuffer."Cell Type"::Date);
@@ -57,7 +61,7 @@ report 50308 Export_Item_To_Excel
     procedure MakeExcelDataBody()
     begin
         ExcelBuffer.AddColumn(Productos."No.", false, '', false, false, false, '', ExcelBuffer."Cell Type"::Text);
-        ExcelBuffer.AddColumn(Productos.Description, false, '', true, false, false, '', ExcelBuffer."Cell Type"::Text);
+        ExcelBuffer.AddColumn(Productos.Description, false, '', false, false, false, '', ExcelBuffer."Cell Type"::Text);
 
         ExcelBuffer.AddColumn(MovProducto."Document Date", false, '', false, false, false, '', ExcelBuffer."Cell Type"::Date);
         ExcelBuffer.AddColumn(MovProducto."Location Code", false, '', false, false, false, '', ExcelBuffer."Cell Type"::Text);

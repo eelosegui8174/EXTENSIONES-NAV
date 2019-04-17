@@ -45,21 +45,19 @@ report 50308 Export_Item_To_Excel
     end;
 
     procedure MakeExcelDataHeader()
-    var
-        Codigo: Text;
-    begin
-        Codigo := Productos.FieldCaption("No.");
-        //   ExcelBuffer.AddColumn(Productos.FieldCaption("No."), false, '', true, false, true, '', ExcelBuffer."Cell Type"::Text);
-        ExcelBuffer.AddColumn(Codigo, false, '', true, false, true, '', ExcelBuffer."Cell Type"::Text);
-        ExcelBuffer.AddColumn(Productos.FieldCaption(Description), false, '', true, false, true, '', ExcelBuffer."Cell Type"::Text);
 
-        ExcelBuffer.AddColumn(MovProducto.FieldCaption("Document Date"), false, '', true, false, true, '', ExcelBuffer."Cell Type"::Date);
+    begin
+
+        ExcelBuffer.AddColumn(Productos.FieldCaption("No."), false, '', true, false, true, '', ExcelBuffer."Cell Type"::Text);
+        ExcelBuffer.AddColumn(Productos.FieldCaption(Description), false, '', true, false, true, '', ExcelBuffer."Cell Type"::Text);
+        ExcelBuffer.AddColumn(MovProducto.FieldCaption("Document Date"), false, '', true, false, true, '', ExcelBuffer."Cell Type"::Text);
         ExcelBuffer.AddColumn(MovProducto.FieldCaption("Location Code"), false, '', true, false, true, '', ExcelBuffer."Cell Type"::Text);
-        ExcelBuffer.AddColumn(MovProducto.FieldCaption(Quantity), false, '', true, false, true, '', ExcelBuffer."Cell Type"::Date);
+        ExcelBuffer.AddColumn(MovProducto.FieldCaption(Quantity), false, '', true, false, true, '', ExcelBuffer."Cell Type"::Text);
     end;
 
     procedure MakeExcelDataBody()
     begin
+        ExcelBuffer.NewRow();
         ExcelBuffer.AddColumn(Productos."No.", false, '', false, false, false, '', ExcelBuffer."Cell Type"::Text);
         ExcelBuffer.AddColumn(Productos.Description, false, '', false, false, false, '', ExcelBuffer."Cell Type"::Text);
 
@@ -67,7 +65,8 @@ report 50308 Export_Item_To_Excel
         ExcelBuffer.AddColumn(MovProducto."Location Code", false, '', false, false, false, '', ExcelBuffer."Cell Type"::Text);
         ExcelBuffer.AddColumn(MovProducto.Quantity, false, '', false, false, false, '', ExcelBuffer."Cell Type"::Number);
 
-        ExcelBuffer.AddColumn('0', false, '', false, false, false, '', ExcelBuffer."Cell Type"::Text);
+
+
     end;
 
     procedure CreateExcelBook()

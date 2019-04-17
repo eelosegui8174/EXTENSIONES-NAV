@@ -1,3 +1,5 @@
+
+//https://community.dynamics.com/nav/b/dynamicsnavcloudfronts/archive/2017/07/23/exporting-record-details-to-excel-using-excel-buffer-in-microsoft-dynamics-nav-2017
 report 50308 Export_Item_To_Excel
 {
     UsageCategory = Administration;
@@ -36,6 +38,7 @@ report 50308 Export_Item_To_Excel
         }
     }
 
+
     procedure MakeExcelInfo()
     begin
 
@@ -53,12 +56,14 @@ report 50308 Export_Item_To_Excel
 
     procedure MakeExcelDataBody()
     begin
-        ExcelBuffer.AddColumn(Productos."No.", false, '', true, false, true, '', ExcelBuffer."Cell Type"::Text);
-        ExcelBuffer.AddColumn(Productos.Description, false, '', true, false, true, '', ExcelBuffer."Cell Type"::Text);
+        ExcelBuffer.AddColumn(Productos."No.", false, '', false, false, false, '', ExcelBuffer."Cell Type"::Text);
+        ExcelBuffer.AddColumn(Productos.Description, false, '', true, false, false, '', ExcelBuffer."Cell Type"::Text);
 
-        ExcelBuffer.AddColumn(MovProducto."Document Date", false, '', true, false, true, '', ExcelBuffer."Cell Type"::Date);
-        ExcelBuffer.AddColumn(MovProducto."Location Code", false, '', true, false, true, '', ExcelBuffer."Cell Type"::Text);
-        ExcelBuffer.AddColumn(MovProducto.Quantity, false, '', true, false, true, '', ExcelBuffer."Cell Type"::Number);
+        ExcelBuffer.AddColumn(MovProducto."Document Date", false, '', false, false, false, '', ExcelBuffer."Cell Type"::Date);
+        ExcelBuffer.AddColumn(MovProducto."Location Code", false, '', false, false, false, '', ExcelBuffer."Cell Type"::Text);
+        ExcelBuffer.AddColumn(MovProducto.Quantity, false, '', false, false, false, '', ExcelBuffer."Cell Type"::Number);
+
+        ExcelBuffer.AddColumn('0', false, '', false, false, false, '', ExcelBuffer."Cell Type"::Text);
     end;
 
     procedure CreateExcelBook()

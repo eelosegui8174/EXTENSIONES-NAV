@@ -12,7 +12,7 @@ pageextension 50308 ExportToEscel extends "Item List"
                 Promoted = true;
                 PromotedCategory = Report;
                 PromotedIsBig = true; //Número de decimales que queremos que tenga (0:0) sin restricción
-                Image = Report;
+                Image = Excel;
                 trigger OnAction()
                 Var
                     erec: record Item;

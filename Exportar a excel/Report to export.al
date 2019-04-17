@@ -34,6 +34,7 @@ report 50308 Export_Item_To_Excel
             trigger OnPreDataItem()
             begin
                 MakeExcelDataHeader();
+                AddSheet();
             end;
         }
     }
@@ -44,8 +45,13 @@ report 50308 Export_Item_To_Excel
 
     end;
 
-    procedure MakeExcelDataHeader()
 
+    procedure AddSheet()
+    begin
+        ExcelBuffer.SelectOrAddSheet('Sheet name');
+    end;
+
+    procedure MakeExcelDataHeader()
     begin
 
         ExcelBuffer.AddColumn(Productos.FieldCaption("No."), false, '', true, false, true, '', ExcelBuffer."Cell Type"::Text);
@@ -65,7 +71,7 @@ report 50308 Export_Item_To_Excel
         ExcelBuffer.AddColumn(MovProducto."Location Code", false, '', false, false, false, '', ExcelBuffer."Cell Type"::Text);
         ExcelBuffer.AddColumn(MovProducto.Quantity, false, '', false, false, false, '', ExcelBuffer."Cell Type"::Number);
 
-
+        ExcelBuffer.fo
 
     end;
 

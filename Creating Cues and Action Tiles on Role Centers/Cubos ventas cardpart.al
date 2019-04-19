@@ -12,7 +12,7 @@ page 50312 SalesCuePage
             cuegroup(SalesCueContainer)
             {
                 Caption = 'Sales Documents';
-                // CuegroupLayout=Wide;   //Si ponemos Wide oculta el texto encima de los cuadros
+                //CuegroupLayout = Wide;   //Si ponemos Wide oculta el texto encima de los cuadros
 
                 field(SalesOrder; SalesOrders)
                 {

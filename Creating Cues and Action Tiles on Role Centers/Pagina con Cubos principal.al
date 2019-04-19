@@ -1,7 +1,7 @@
 //https://docs.microsoft.com/es-es/dynamics365/business-central/dev-itpro/developer/devenv-cues-action-tiles#CueWideLayout
 page 50311 CuePage
 {
-    PageType = Card;
+    PageType = Document;
     SourceTable = SalesInvoiceCueTable;
 
     layout
@@ -9,14 +9,12 @@ page 50311 CuePage
 
         area(content)
         {
-
-            group(cubos)
+            group(grupo1)
             {
-
                 cuegroup(SalesActionontainer)
                 {
 
-                    Caption = '';
+                    Caption = 'Sales Action container';
                     actions
                     {
 
@@ -42,18 +40,52 @@ page 50311 CuePage
 
                 }
             }
+            group(otros)
+            {
+                cuegroup(SalesActionontainer2)
+                {
+
+                    Caption = 'Sales Action container 2';
+                    actions
+                    {
+
+                        action(ActionName3)
+                        {
+
+                            Image = TileCyan;
+                            trigger OnAction()
+                            begin
+                                message('a');
+                            end;
+
+                        }
+                        action(ActionName4)
+                        {
+                            Image = TileLemon;
+                            trigger OnAction()
+                            begin
+                                message('a');
+                            end;
+                        }
+                    }
+
+                }
+            }
+        }
+        area(FactBoxes)
+        {
             part(Sales; SalesCuePage)
             {
-                Caption = 'Sales Cues';
+                Caption = ' ';
 
             }
             part(Purchase; PurchaseCuePage)
             {
-                Caption = 'Purchases Cues';
+                Caption = ' ';
+
 
             }
         }
-
     }
 
 

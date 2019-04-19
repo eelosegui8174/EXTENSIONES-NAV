@@ -1,0 +1,26 @@
+{
+  "id": "b78c8711-c6a2-42ad-b7f9-c20880251e89",
+  "name": "Creating Cues and Action Tiles on Role Centers",
+  "publisher": "Default publisher",
+  "version": "1.0.0.0",
+  "brief": "",
+  "description": "",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "14.0.0.0",
+  "application": "14.0.0.0",
+  "idRanges": [
+    {
+      "from": 50100,
+      "to": 50149
+    }
+  ],
+  "contextSensitiveHelpUrl": "https://CreatingCuesandActionTilesonRoleCenters.com/help/",
+  "showMyCode": true,
+  "runtime": "3.0"
+}

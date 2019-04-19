@@ -34,7 +34,6 @@ report 50308 Export_Item_To_Excel
             trigger OnPreDataItem()
             begin
                 MakeExcelDataHeader();
-                AddSheet();
             end;
         }
     }
@@ -71,8 +70,6 @@ report 50308 Export_Item_To_Excel
         ExcelBuffer.AddColumn(MovProducto."Location Code", false, '', false, false, false, '', ExcelBuffer."Cell Type"::Text);
         ExcelBuffer.AddColumn(MovProducto.Quantity, false, '', false, false, false, '', ExcelBuffer."Cell Type"::Number);
 
-        ExcelBuffer.fo
-
     end;
 
     procedure CreateExcelBook()
@@ -92,8 +89,10 @@ report 50308 Export_Item_To_Excel
 
     trigger OnPostReport()
     begin
-        if PrintToExcel then
+        if PrintToExcel then begin
             CreateExcelBook();
+
+        end;
     end;
 
 

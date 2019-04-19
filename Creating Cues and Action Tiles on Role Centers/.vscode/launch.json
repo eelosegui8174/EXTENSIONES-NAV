@@ -6,12 +6,14 @@
             "request": "launch",
             "name": "Your own server",
             "server": "http://localhost",
-            "serverInstance": "BC130",
-            "authentication": "UserPassword",
-            "startupObjectId": 22,
+            "serverInstance": "DynamicsNAV130",
+            "authentication":"Windows",
+            "startupObjectId": 50311,
             "startupObjectType": "Page",
             "breakOnError": true,
-            "launchBrowser": true
+            "launchBrowser": true,
+            "schemaUpdateMode": "Synchronize"
         }
     ]
 }
+

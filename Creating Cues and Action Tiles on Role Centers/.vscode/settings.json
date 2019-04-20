@@ -1,0 +1,15 @@
+{
+    "sqltools.connections": [
+        {
+            "askForPassword": true,
+            "connectionTimeout": 30,
+            "database": "Demo Database NAV (13-0)",
+            "dialect": "MSSQL",
+            "domain": null,
+            "name": "1",
+            "port": 7049,
+            "server": "DESKTOP-TJ39H13",
+            "username": "Yakon11"
+        }
+    ]
+}

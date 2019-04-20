@@ -72,6 +72,7 @@ page 50311 CuePage
                 }
             }
         }
+
         area(FactBoxes)
         {
             part(Sales; SalesCuePage)
@@ -86,9 +87,31 @@ page 50311 CuePage
 
             }
         }
+
+
     }
 
-
+    actions
+    {
+        area(Processing)
+        {
+            action(Miaccion1)
+            {
+                //Caption = 'Texto';//si  usamos  fichero de traducciones o no queremos otro idioma
+                CaptionML = ENU = 'Action 1', ESP = 'Acción 1'; //si no usamos  fichero de traducciones
+                Promoted = true;
+                PromotedCategory = Process; //New,Process,Report,Category4,Category5...Category10
+                PromotedIsBig = true; //Número de decimales que queremos que tenga (0:0) sin restricción
+                Image = Process;
+                trigger OnAction()
+                Var
+                //variables locales
+                begin
+                    message('Acción 1');
+                end;
+            }
+        }
+    }
 
 
     trigger OnOpenPage();

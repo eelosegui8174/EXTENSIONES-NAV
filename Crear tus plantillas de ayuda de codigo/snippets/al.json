@@ -1,0 +1,158 @@
+{
+	 
+
+	///https://docs.microsoft.com/es-es/dynamics365/business-central/dev-itpro/developer/devenv-programming-in-al
+	
+//Código añadido
+//----------------------------------------------------------------------------------
+//DotNet
+//Integer
+//Decimal	
+//Option
+//GUID
+//FlowFieldSum
+//FlowFieldCount
+//FlowFieldExist
+//FlowFieldMin
+//FlowFieldMax
+//FlowFieldLookUp
+
+//TableRelation
+//TableRelationCondicionada
+
+//Action
+//DialogConfirm
+//CodeUnit EventSuscriber
+//Page EventSuscriber
+
+//#region COSAS AGREGADAS 
+"Snippet : Mis cosas":{
+
+	"prefix": "Mis cosas",
+	"body":  [
+			"FUNCIONES",
+			"-------------------------",
+			"GenerarDiarioProducto",
+			"GenerarDiarioProducto1",
+			"GenerarDiarioProducto2",
+			"CODIGO FUENTE",
+			"-------------------------",
+			"Action (miAction)",
+			"Codenit eventsuscriber (miCodeunitEventSuscriber)",
+			"Page eventsuscriber (miPageEventSuscriber)",
+			"",
+			"TIPOS DE PAGINAS",
+			"-------------------------",
+			"Dialog confirm (MiDialogConfirm)"
+	],
+	"description": "Funciones que tengo memorizadas"
+
+	},
+//#endregion COSAS AGREGADAS
+
+//#region Codigo fuente
+"Snippet: Action": {
+	"prefix": "miAction",
+	"body": [
+		"action ('Nombre')",
+		"{",	
+		"\t${1://Caption = 'Texto';}//si  usamos  fichero de traducciones o no queremos otro idioma",	
+		"\t${2:CaptionML = ENU = 'Text', ESP= 'Texto';} //si no usamos  fichero de traducciones",  
+		"\t${3:Promoted = true;}",
+		"\t${4:PromotedCategory = 'Categoria';} //New,Process,Report,Category4,Category5...Category10",
+		"\t${5:PromotedIsBig = true;} //Número de decimales que queremos que tenga (0:0) sin restricción",
+		"\t${6:Image = 'Imagen';} ",
+		"\ttrigger OnAction()",
+		"\tVar",
+		"\t //variables locales",
+		"\t begin",
+		"\t //Código",
+		"\t end;",
+		"}"
+	],
+	"description": "Mi Action"
+},  
+
+//#endregion  Codigo fuente
+
+//#region PAGINAS
+"Snippet: Page DialogConfirm": {
+	"prefix": "miDialogConfirm",
+	"body": [
+		
+	"page ${0}'número' 'nombre'",
+	"{",
+	"\tPageType = ConfirmationDialog;",
+	"\tUsageCategory = Lists;",
+	"\tApplicationArea = All;",
+	"\t",
+	"\tlayout",
+	"\t{",
+	"\t\tArea(Content)",
+	"\t\t{",
+	"\t\t\tgroup('Pestaña1')",
+	"\t\t\t{",
+	"\t\t\t\tfield(var1; 'descripcón') { }",
+	"\t\t\t\tfield(var1; 'descripcón') { }",
+	"\t\t\t}",
+
+	"\t\t\tgroup('Pestaña2')",
+	"\t\t\t{",
+	"\t\t\t\tfield(var1; 'descripcón') { }",
+	"\t\t\t\tfield(var1; 'descripcón') { }",
+	"\t\t\t}",
+	"\t\t}",
+	"\t}",
+	"\t",	
+	"//Función que se llama desde el Origen para recoger los valores introducidos",
+	"\tprocedure Retorno_Valores(var lvar1: Text; var lvar2: Text; var lvar3: Integer; var lvar4: Decimal)",
+	"\tbegin",
+	"\t\tlvar1 := var1;",
+	"\t\tlvar2 := var2;",
+	"\t\tlvar3 := var3;",
+	"\t\tlvar4 := var3;",
+	"\tend;",
+	"\t",
+	"\tvar",
+	"\t\tvar1: Text;",
+	"\t\tvar2: text;",
+	"\t\tvar3: Integer;",
+	"\t\tvar4: Decimal;",
+	"}",
+	"\t",
+	"\t",
+	"//LLAMADA",
+	"//pagina.LookupMode;",
+	"//if pagina.RunModal() = Action::Yes then begin",
+	"\t //pagina.Retorno_Valores(var1, var2, var3, var4);  //la funcion devulve los valores",
+	"\t //message(var1 + ' ' + var2 + ' ' + format(var3) + '  ' + format(var4))",
+	"//end;",
+],
+"description": "Mi página Dialog confirm"
+},  
+//#endregion PAGINAS
+
+
+"Snippet: Dotnet": {
+	"prefix": "miDotNet",
+	"body": [
+		"dotnet",
+		"\t{",
+		"\t\t assembly(mscorlib)",
+		"\t\t\t{",
+		"\t\t\t\ttype(System.IO.StreamReader; DotnetStream) { }",
+		"\t\t\t\ttype(System.Text.Encoding; DotNetTextEncoding) { }",
+		"\t\t\t}",
+		"\t\t}",
+		"",
+
+		"//EJMPLO DECLARACION:",
+		"//-------------------",
+		"//DotNetStream: DotNet DotnetStream; //Variable declarada arriba de tipo dotnet", 
+		"//DotNetTextEncoding: DotNet DotNetTextEncoding;  //Variable declarada arriba de tipo dotnet" 
+
+		],
+	"description": "Ejemplo variable DotNet"
+},
+}
+

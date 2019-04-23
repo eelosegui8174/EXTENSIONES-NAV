@@ -1,0 +1,24 @@
+{
+	 
+//#region FUNCIONES AGREGADAS 
+"Snippet : Mis funciones":{
+
+	"prefix": "Mis funciones",
+	"body":  [
+	
+			"CreaReservaDiario (miCreaReservaDiario)",
+			 
+			
+	
+	],
+	"description": "Funciones que tengo memorizados"
+
+	},
+//#endregion FUNCIONES AGREGADOS	
+
+
+//#endregion FUNCIONES
+
+
+	
+}

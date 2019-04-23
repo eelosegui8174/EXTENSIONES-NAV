@@ -1,0 +1,49 @@
+{
+	 
+
+//#region FUNCIONES AGREGADAS 
+"Snippet : Mis ayudas":{
+
+"prefix": "Mis Ayudas",
+"body":  [	
+		"app.json (Mi ayuda app.json)",
+		"launch.json (Mi ayuda launch.json)",				
+],
+"description": "Ayudas que tengo memorizados"
+
+},
+
+
+
+
+
+
+//#endregion FUNCIONES AGREGADOS	
+	"Snippet : Mis ayuda app.json file":{
+
+		"prefix": "Mi ayuda app.json",
+		"body":  [
+	    "/*AYUDA DE LOS CAMPOS */",
+		"https://docs.microsoft.com/es-es/dynamics365/business-central/dev-itpro/developer/devenv-json-files",
+		"",
+		"logo = ./Icono/logo.png   /*entre comilla doble*/ ",
+		"showMyCode = true    /*si queremos que el código se pueda descargar*/ ",
+		"target = Internal    /*si queremos usar Dotnet The Dynamics NAV Server setting must then also be set to Internal*/ ",
+		],
+		"description": "Ruta web ayuda app.json"
+	},
+	"Snippet : Mis ayuda launch.json file":{
+
+		"prefix": "Mi ayuda launch.json",
+		"body":  [
+	    "/*AYUDA DE LOS CAMPOS */",
+		"https://docs.microsoft.com/es-es/dynamics365/business-central/dev-itpro/developer/devenv-json-files",
+		"",
+		"schemaUpdateMode: Synchronize /*si la extensión ya esta instalada para que no borre los datos de las tablas creadas/campos etc",
+		"schemaUpdateMode: recreate /*si la extensión ya esta instalada para borre los datos de las tablas creadas/campos etc",
+		"*/Valor por defecto es Sybchronize"
+
+		],
+		"description": "Ruta web ayuda launch.json"
+	}
+}

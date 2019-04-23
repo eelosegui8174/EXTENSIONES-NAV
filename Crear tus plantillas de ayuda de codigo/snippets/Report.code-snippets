@@ -1,0 +1,113 @@
+{
+	 
+	//https://docs.microsoft.com/es-es/dynamics365/business-central/dev-itpro/developer/devenv-programming-in-al
+		
+//#region PROCESOS AGREGADAS 
+"Snippet : Mis Reports":{
+
+	"prefix": "Mis Reports",
+	"body":  [
+	
+			"GenerarReport (miReportNuevo)",
+			"Relacion tablas(miReportRelation)",
+			"GenerateLoyout (miReportGeneraLayout)"
+			
+	
+	],
+	"description": "procesos que tengo memorizados"
+
+	},
+//#endregion PROCESOS AGREGADOS	
+
+
+//#region REPORT
+
+	"Snippet : MiReport":{
+
+		"prefix": "MiReportNuevo",
+		"body":  [	
+			//Para que se generen los ficheros rdl y docx pulsar Ctrol + B y se generaran en la carpeta indicada  
+			"Report XXXXX 'Nombre'",
+			"{",
+			"CaptionML = ENU = '...', ESP = '...';",
+			"UsageCategory = Lists;",
+			"ApplicationArea = All;",
+			"",
+			"RDLCLayout = './REPORTS/Nombre.rdl'; //Sustituir / por la contrabarra ",
+			"WordLayout = './REPORTS/Nombre.docx'; //Sustituir / por la contrabarra",
+			"",
+			"",
+			"dataset",
+			"{",
+			"\tdataitem('Alias tabla 1'; 'Tabla')",
+			"\t{",
+			//para poder filtrar por estos campos
+			"\t\tRequestFilterFields = 'campo';",
+			"\t\tcolumn(Filtros; 'Tabla'.GetFilters()) { }",
+			"\t\tcolumn('alias campo'; 'Campo') { }",
+			"\t\tcolumn('alias campo'; 'Campo') { }",
+			"",
+			"\t\t//Tabla relacionada",
+			"\t\tdataitem('Alias tabla 2'; 'Tabla')",
+			"\t\t{",
+			//Relacionamos con el cliente
+			"\t\t\tDataItemTableView = sorting ('Campo');",
+			"\t\t\tDataItemLinkReference = 'Alias Tabla 1';",
+			"\t\t\tDataItemLink = 'Campo de esta' = field ('Campo ALias tabla 1');",
+			"\t\t\t",
+			"\t\t\tcolumn('alias campo'; 'Campo') { }",
+			"\t\t\tcolumn('alias campo'; 'Campo') { }",
+			"\t\t\tcolumn('alias campo'; 'Campo') { }",
+			"\t\t\t",
+			"\t\t\t",
+			"\t\t\ttrigger OnAfterGetRecord()",
+			"\t\t\tbegin",
+			"\t\t\t",
+			"\t\t\t\t    if cliente.GET('alias tabla 1.Campo') then;",
+			"\t\t\t\t    if eProducto.GET('alias tabla 2.Campo') then;",
+			"\t\t\t\t",
+			"\t\t\tend;",
+
+
+			"\t\t}",
+			"\t}",
+			"}",
+
+
+			"labels",
+			"{",
+			"\t    label(Filtros; ENU = 'Filters', ESP = 'Filtros')",
+			"\t    label('NombreLacel2'; ENU = '....: ', ESP = '......: ')",
+			"}",
+
+			"var",
+			"\t   cliente: record customer;",
+			"\t    eProducto: Record Item;",
+			"}",
+		]
+},
+"Snippet : MiReportRelation":{
+
+	"prefix": "MiReportRelation",
+	"body":  [
+		"\t\t\tDataItemTableView = sorting ('Campo');",
+		"\t\t\tDataItemLinkReference = 'Alias Tabla 1';",
+		"\t\t\tDataItemLink = 'Campo de esta' = field ('Campo ALias tabla 1');",
+	]
+},	
+
+"Snippet : MiReportGeneraLayout":{
+
+	"prefix": "miReportGeneraLayout",
+	"body":  [	
+		"//Hay qu eponerlo antes del primer dataset",
+		"//Para que se generen los ficheros rdl y docx pulsar Ctrol + B y se generaran en la carpeta indicada",		
+		"//Luego para modificar ir a la carpeta donde ha creado los ficheros y el .rdl ya se puede abrir con el sql report builder o cualquier otro",
+		"RDLCLayout = './REPORTS/Nombre.rdl'; //Sustituir / por la contrabarra ",
+		"WordLayout = './REPORTS/Nombre.docx'; //Sustituir / por la contrabarra"
+	]
+},
+//#endregion REPORT
+
+} 
+

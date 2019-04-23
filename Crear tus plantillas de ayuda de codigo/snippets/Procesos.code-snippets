@@ -1,0 +1,380 @@
+{
+ //https://github.com/Microsoft/AL/tree/master/snippets
+	///https://docs.microsoft.com/es-es/dynamics365/business-central/dev-itpro/developer/devenv-programming-in-al
+	
+//#region PROCESOS AGREGADAS 
+"Snippet : Mis procesos":{
+
+	"prefix": "Mis Procesos",
+	"body":  [
+	        "Repeat (miRepeat)",
+			"CaseOF (miCaseOf)",
+			"While (miWhile)",
+			
+	
+	],
+	"description": "procesos que tengo memorizados"
+
+	},
+	"Snippet: Procedure": {
+
+        "prefix": "mitprocedure",
+
+        "body": [
+
+            "${2:local} procedure ${1:MyProcedure}(${3})",
+
+            "var",
+
+            "\t${4:myInt}: ${5:Integer};",
+
+            "begin",
+
+            "\t$0",
+
+            "end;"
+
+        ],
+
+        "description": "Snippet: Procedure"
+
+    },
+//#endregion PROCESOS AGREGADOS	
+//#region CODIGO IF/REPEAT/WHILE...
+
+"Emitter/Event": {
+	"prefix": "miRepeat",
+	"body": [
+		
+		"CLEAR (${1});",
+		"//${1}.SETRANGE(${1}.Campo,{3:Valor});",
+		"IF ${1}.findset then ",
+		"\tBegin",
+		"\t\tRepeat",		
+		"$0",
+		"\t\tUntil ${1}.Next = 0;",
+		"\tEnd",
+	],
+	"description": "Mi repeat"
+
+},
+
+"Snippet: Case Of": 
+{
+	"prefix": "miCaseOf",
+	"body": [
+		"case ${1:'Variable o campo'} of",
+		"\t${2:'Valor'}:",					
+		"\t\tBegin",
+		"\t\t\t //CODIGO",
+		"\t\tEnd;",
+		"\t${3:'Valor'}:",
+		"\t\tBegin",
+		"\t\t\t //CODIGO",
+		"\t\tEnd;",
+		"\telse BEGIN",
+		"\t\t //CODIGO",
+		"\tEND;",
+		"end;"
+	],
+	"description": "Snippet: Case Of"
+},
+
+"Snippet: while": {
+	"prefix": "miWhile",
+	"body": [
+		"while ${1:'Condicion'} do begin",
+		"\t\t //CODIGO",
+		"\tend;",
+	]
+},
+
+
+
+
+
+
+
+
+
+"Snippet: Assert Error": {
+
+	"prefix": "mitassert",
+
+	"body": [
+
+		"assertError ${1:AssertStatement};",
+
+		"if ${2:getLastErrorText} <> ${3:ErrorText} then",
+
+		"\terror('${4:Unexpected error: %1}', ${0:getLastErrorText});"
+
+	],
+
+	"description": "Snippet: Assert Error"
+
+},
+
+"Snippet: With Do": {
+
+	"prefix": "miwithdo",
+
+	"body": [
+
+		"with ${1:RecordName} do begin",
+
+		"\t$0",
+
+		"end;"
+
+	],
+
+	"description": "Snippet: With Do"
+
+},
+
+"Snippet: If": {
+
+	"prefix": "tif",
+
+	"body": [
+
+		"if ${1:BooleanExpression} then begin",
+
+		"\t$0",
+
+		"end;"
+
+	],
+
+	"description": "Snippet: If"
+
+},
+
+"Snippet: If Else": {
+
+	"prefix": "tifelse",
+
+	"body": [
+
+		"if ${1:BooleanExpression} then begin",
+
+		"\t${2}",
+
+		"end else begin",
+
+		"\t$0",
+
+		"end;"
+
+	],
+
+	"description": "Snippet: If Else"
+
+},
+
+
+
+"Snippet: For": {
+
+	"prefix": "tfor",
+
+	"body": [
+
+		"for ${1:ControlVariable} := ${2:StartNumber} to ${3:EndNumber} do begin",
+
+		"\t$0",
+
+		"end;"
+
+	],
+
+	"description": "Snippet: For"
+
+},
+
+"Snippet: ForEach": {
+
+	"prefix": "tforeach",
+
+	"body": [
+
+		"foreach ${1:Value} in ${2:EnumerableCollection} do begin",
+
+		"\t$0",
+
+		"end;"
+
+	],
+
+	"description": "Snippet: ForEach"
+
+},
+
+"Snippet: While": {
+
+	"prefix": "twhile",
+
+	"body": [
+
+		"while ${1:BooleanExpression} do begin",
+
+		"\t$0",
+
+		"end;"
+
+	],
+
+	"description": "Snippet: While"
+
+},
+
+
+"Snippet: Event Subscriber": {
+
+	"prefix": "teventsub",
+
+	"body": [
+
+		"[EventSubscriber(ObjectType::${1|Codeunit,Page,Query,Report,Table,XmlPort|}, ${2|Codeunit::,Database::,Page::,Query::,Report::,XmlPort::|}, ${3:'OnSomeEvent'}, ${4:'ElementName'}, ${5:SkipOnMissingLicense}, ${6:SkipOnMissingPermission})]",
+
+		"local procedure ${7:MyProcedure}(${8})",
+
+		"begin",
+
+		"\t$0",
+
+		"end;"
+
+	],
+
+	"description": "Snippet: Event Subscriber"
+
+},
+
+"Snippet: Integration Event": {
+
+	"prefix": "teventint",
+
+	"body": [
+
+		"[IntegrationEvent(${1:IncludeSender}, false)]",
+
+		"local procedure ${0:MyProcedure}()",
+
+		"begin",
+
+		"end;"
+
+	],
+
+	"description": "Snippet: Integration Event"
+
+},
+
+"Snippet: Business Event": {
+
+	"prefix": "teventbus",
+
+	"body": [
+
+		"[BusinessEvent(${1:IncludeSender})]",
+
+		"local procedure ${0:MyProcedure}()",
+
+		"begin",
+
+		"end;"
+
+	],
+
+	"description": "Snippet: Business Event"
+
+},
+
+"Snippet: Caption ML": {
+
+	"prefix": "tcaptionml",
+
+	"body": [
+
+		"CaptionML = ENU = '${1:englishText}',",
+
+		"\t\t\t${2:languageShortcut} = '${0:languageText}';"
+
+	],
+
+	"description": "Snippet: Caption ML"
+
+},
+
+"Snippet: Option Caption ML": {
+
+	"prefix": "toptioncaptionml",
+
+	"body": [
+
+		"OptionCaptionML = ENU = '${1:englishText}',",
+
+		"\t\t\t${2:languageShortcut} = '${0:languageText}';"
+
+	],
+
+	"description": "Snippet: Option Caption ML"
+
+},
+
+"Snippet: If Table Empty Else": {
+
+	"prefix": "tisemptyelse",
+
+	"body": [
+
+		"if ${1:Rec}.IsEmpty then begin",
+
+		"\t${2}",
+
+		"end else begin",
+
+		"\t$0",
+
+		"end;"
+
+	],
+
+	"description": "Snippet: If Table Empty Else"
+
+},
+
+"Snippet: If Table Empty": {
+
+	"prefix": "tisempty",
+
+	"body": [
+
+		"if ${1:Rec}.IsEmpty then begin",
+
+		"\t$0",
+
+		"end;"
+
+	],
+
+	"description": "Snippet: If Table Empty"
+
+}
+
+
+
+
+
+
+
+
+
+ 
+
+
+//#endregion CODIGO IF/REPEAT/WHILE...
+ 
+}

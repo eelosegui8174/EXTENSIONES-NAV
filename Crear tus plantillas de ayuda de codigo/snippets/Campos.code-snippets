@@ -1,0 +1,209 @@
+{
+ 
+
+//#region CAPMOS AGREGADAS 
+"Snippet : Mis Campos":{
+
+	"prefix": "Mis Campos",
+	"body":  [
+	
+			"Decimal (miCampoDecimal)",
+			"Integer (miCampoInteger)",
+			"Option  (miCampoOption)",
+			"GUID  (miCampoGUID)",
+			"Campo SUM  (miFLowFieldSum)",
+			"Campo COUNT  (miFLowFieldCount)",
+			"Campo Exist  (miFLowFieldExist)",
+			"Campo Min  (miFLowFieldMin)",
+			"Campo Max  (miFLowFieldMax)",
+			"Campo LoolkUp  (miFLowFieldLookUp)",
+			"Campo TableRelation  (miTableRealtion)",
+			"Campo TableRelationCondicionada  (miTableRealtionCondicionada)",
+			"",
+	
+	],
+	"description": "Cmapos que tengo memorizados"
+
+	},
+//#endregion COSAS AGREGADAS
+
+//#region CAMPOS 
+
+	"Snippet: campo decimal": {
+		"prefix": "miCampoDecimal",
+		"body": [
+			"field (Número; Nombre; Decimal)",
+			"{",			
+			"\t${0://Caption = 'Texto';}//si  usamos  fichero de traducciones o no queremos otro idioma",	
+			"\t${1:CaptionML = ENU = 'Text', ESP= 'Texto';} //si no usamos  fichero de traducciones",  
+			"\t${2:Editable = True;}",
+			"\t${3:// NotBlank = false;} //Si no permitimos que se quede vacio",
+			"\t${4:// DecimalPlaces = 0:2;} //Número de decimales que queremos que tenga (0:0) sin restricción",
+			"\t${5:// InitValue = 0;}",
+			"\t${6:// MinValue = 0;}",
+			"\t${7:// MaxValue = 'max' }",
+			"}"
+			
+		],
+		"description": "mi campo decimal"
+	},
+	"Snippet: campo integer": {
+		"prefix": "miCampoInteger",
+		"body": [
+			"field (Número; Nombre; Integer)",
+			"{",	
+			"\t${0://Caption = 'Texto';}//si  usamos  fichero de traducciones o no queremos otro idioma",	
+			"\t${1:CaptionML = ENU = 'Text', ESP= 'Texto';} //si no usamos  fichero de traducciones",  
+			"\t${2:Editable = True;}",
+			"\t${3:// NotBlank = false;} //Si no permitimos que se quede vacio",
+			"\t${4:// DecimalPlaces = 0:2;} //Número de decimales que queremos que tenga (0:0) sin restricción",
+			"\t${5:// MinValue = 0;} ",
+			"\t${6:// MaxValue = 'max' }",
+			"}"
+		],
+		"description": "Mi campo Integer"
+	},  
+	"Snippet: campo Option": {
+		"prefix": "miCampoOption",
+		"body": [
+			"field(id; 'Nombre'; Option)",
+			"{",
+			"\t${0://Caption = 'Texto';}//si  usamos  fichero de traducciones o no queremos otro idioma",	
+			"\t${1:CaptionML = ENU = 'Text', ESP= 'Texto';} //si no usamos  fichero de traducciones",  
+			"\t${2:Editable = True;}",
+			"\t${3:OptionMembers = 'Opcion1,Opcion2,Opcion3...'}; //Las opciones entre comillas dobles si tiene espacios", 
+			"\t${4: OptionCaptionML = ENU = 'Option 1, Option 2', ESP = 'Opción 1, Opción2';};", 
+			"}",
+		],
+		"description": "Mi campo Option"
+	},  
+	"Snippet: campo GUID": {
+		"prefix": "miCampoGUID",
+		"body": [
+			"field(id; 'Nombre'; GUID)",
+			"{",
+			"\t${0://Caption = 'Texto';}//si  usamos  fichero de traducciones o no queremos otro idioma",	
+			"\t${1:CaptionML = ENU = 'Text', ESP= 'Texto';} //si no usamos  fichero de traducciones",  
+			"\t${2:Editable = false;}",
+			"\t$0",
+			"\t//Ejemplo de como tratarlo",
+			"\t//IF NOT ISNULLGUID('Nombre') THEN BEGIN",			 
+			"}",
+		],
+		"description": "Mi campo Option"
+	},  
+	"Snippet: campo flowfieldSUM": { 
+        "prefix": "miCampoflowfieldSUM",
+        "body": [
+
+            "field (Número; Nombre; Decimal)",
+			"{",			
+			"\t${0://Caption = 'Texto';}//si  usamos  fichero de traducciones o no queremos otro idioma",	
+			"\t${1:CaptionML = ENU = 'Text', ESP= 'Texto';} //si no usamos  fichero de traducciones",  
+			"\t${2:Editable = True;}",			 
+			"\t${4:FieldClass = FLowfield;}",
+		    "\t${5:CalcFormula = Sum('Tabla Origen'.campo WHERE ('Campo tabla origen'=FIELD(mi campo),Campo tabla origen'=FIELD(mi campo),'Campo tabla origen'=FILTER(<>'')));};",
+            "}"
+
+        ],
+        "description": "Flowfield SUM"
+	},
+	"Snippet: campo flowfieldCOUNT": {
+        "prefix": "miCampoflowfieldCount",
+        "body": [
+
+            "field (${1:Numero}; ${2:Nombre}; Decimal)",
+			"{",			
+			"\t${0://Caption = 'Texto';}//si  usamos  fichero de traducciones o no queremos otro idioma",	
+			"\t${1:CaptionML = ENU = 'Text', ESP= 'Texto';} //si no usamos  fichero de traducciones",  
+			"\t${2:Editable = True;}",			 
+			"\t${4:FieldClass = FLowfield;}",
+		    "\t${5:CalcFormula = Count('Tabla Origen' WHERE ('Campo tabla origen'=FIELD(mi campo),Campo tabla origen'=FIELD(mi campo),'Campo tabla origen'=FILTER(<>'')));};",
+            "}"
+
+        ],
+        "description": "Flowfield COUNT"
+	},
+	"Snippet: campo flowfieldEXIST": {
+        "prefix": "miCampoflowfieldExist",
+        "body": [
+
+            "field (${1:Numero}; ${2:Nombre}; Decimal)",
+			"{",
+			"\t${0://Caption = 'Texto';}//si  usamos  fichero de traducciones o no queremos otro idioma",	
+			"\t${1:CaptionML = ENU = 'Text', ESP= 'Texto';} //si no usamos  fichero de traducciones",  
+			"\t${2:Editable = True;}",			 
+			"\t${4:FieldClass = FLowfield;}",
+		    "\t${5:CalcFormula = exist('Tabla Origen' WHERE ('Campo tabla origen'=FIELD(mi campo),Campo tabla origen'=FIELD(mi campo),'Campo tabla origen'=FILTER(<>'')));};",
+            "}"
+
+        ],
+        "description": "Flowfield EXIST"
+	},
+	"Snippet: campo flowfieldMin": { 
+        "prefix": "miCampoflowfieldMin",
+        "body": [
+
+            "field (Número; Nombre; Decimal)",
+			"{",			
+			"\t${0://Caption = 'Texto';}//si  usamos  fichero de traducciones o no queremos otro idioma",	
+			"\t${1:CaptionML = ENU = 'Text', ESP= 'Texto';} //si no usamos  fichero de traducciones",  
+			"\t${2:Editable = True;}",			 
+			"\t${4:FieldClass = FLowfield;}",
+		    "\t${5:CalcFormula = Min('Tabla Origen'.campo WHERE ('Campo tabla origen'=FIELD(mi campo),Campo tabla origen'=FIELD(mi campo),'Campo tabla origen'=FILTER(<>'')));};",
+            "}"
+
+        ],
+        "description": "Flowfield Min"
+	},
+	"Snippet: campo flowfieldMax": { 
+        "prefix": "miCampoflowfieldMax",
+        "body": [
+
+            "field (Número; Nombre; Decimal)",
+			"{",			
+			"\t${0://Caption = 'Texto';}//si  usamos  fichero de traducciones o no queremos otro idioma",	
+			"\t${1:CaptionML = ENU = 'Text', ESP= 'Texto';} //si no usamos  fichero de traducciones",  
+			"\t${2:Editable = True;}",			 
+			"\t${4:FieldClass = FLowfield;}",
+		    "\t${5:CalcFormula = Max('Tabla Origen'.campo WHERE ('Campo tabla origen'=FIELD(mi campo),Campo tabla origen'=FIELD(mi campo),'Campo tabla origen'=FILTER(<>'')));};",	
+			"}"
+
+        ],
+        "description": "Flowfield Max"
+	},
+	
+	"Snippet: campo TableRelation": {
+		"prefix": "miTableRealtion",
+		"body": [
+			"field (Número; Nombre; Code[20])",
+			"{",			
+			"\t${0://Caption = 'Texto';}//si  usamos  fichero de traducciones o no queremos otro idioma",	
+			"\t${1:CaptionML = ENU = 'Text', ESP= 'Texto';} //si no usamos  fichero de traducciones",  
+			"\t${2:Editable = True;}",
+			"\tTableRelation = 'Tabla relación'.'campo' WHERE ('Campo destino'=CONST('Valor'),'Campo destino'=FIELD(Micampo))",			
+			"tValidateTableRelation = true",
+			"}"
+			
+		],
+		"description": "mi campo TableRelation"
+	},
+	"Snippet: campo TableRelationCondicionada": {
+		"prefix": "miTableRealtionCondicionada",
+		"body": [
+			"field (Número; Nombre; Code[20])",
+			"{",			
+			"\t${0://Caption = 'Texto';}//si  usamos  fichero de traducciones o no queremos otro idioma",	
+			"\t${1:CaptionML = ENU = 'Text', ESP= 'Texto';} //si no usamos  fichero de traducciones",  
+			"\t${2:Editable = True;}",
+			"\tTableRelation = IF ('Campo origen'=CONST('valor'),'Campo origen'=FILTER(<>'valor')) 'Tabla relación'.'campo' WHERE ('Campo destino'=CONST('Valor'),'Campo destino'=FIELD(Micampo))", 
+			"\tELSE IF ('Campo origen'=CONST('valor'),'Campo origen'=FILTER(='valor')) 'Tabla relación'.'campo' WHERE ('Campo destino'=CONST('Valor'),'Campo destino'=FIELD(Micampo))",			 			 
+			"tValidateTableRelation = true",
+			"}"
+			
+		],
+		"description": "mi campo TableRelation condicionada"
+	},
+//#endregion CAMPOS 
+
+}

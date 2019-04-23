@@ -1,0 +1,64 @@
+{
+	 
+
+//#region EVENTOS AGREGADAS 
+"Snippet : Mis eventos":{
+
+	"prefix": "Mis Eventos",
+	"body":  [	
+			"CodeunitEventSuscriber (miCodeunitEventSuscriber)",
+			"PageEventSuscriber (miPageEventSuscriber)",				
+	],
+	"description": "procesos que tengo memorizados"
+
+	},
+//#endregion EVENTOS AGREGADOS	
+
+"Snippet: CodeUnit eventSuscriber": {
+	"prefix": "miCodeunitEventSuscriber",
+	"body": [
+		"[EventSubscriber(ObjectType::Codeunit,  //Tipo de objeto Codeunit, Page, Report, Table, or XMLPort.",
+		"\tCodeunit::'Nombre codeunit', //Nombre del objeto ",
+		"\t'OnBeforePostSalesDoc', //Evento al que nos suscribimos",
+		"\t'',  //Vacio",
+		"\ttrue, //Establézcalo en verdadero para omitir la llamada del método del suscriptor de eventos si la licencia del usuario no cubre la unidad de código del suscriptor de eventos. Si es falso, se produce un error y la ejecución del código se detiene. falso es el predeterminado",
+		"\ttrue)] //Establézcalo en verdadero para omitir la llamada del método del suscriptor de eventos si el usuario no tiene los permisos correctos para la unidad de código del suscriptor de eventos. Si es falso, se produce un error y la ejecución del código se detiene. falso es el predeterminado",
+		"",
+		"//Creamos el la funcion, el nombre de las variables se tienen que llamar igual que las ha declarado Navision",
+		"//LOCAL [IntegrationEvent] OnBeforePostSalesDoc(VAR SalesHeader : Record 'nombreVariable';CommitIsSuppressed : Boolean;PreviewMode : Boolean)",
+		"\t//En este caso seria SalesHeader",		
+		"procedure 'Nombre función'(NombreVariable : record 'NombreTabla')", 
+		"\tbegin",
+		"\t//Código",		
+		"\tend;",
+		"end;"
+	],
+	"description": "Mi Codeunit event suscriber"
+},  
+"Snippet: Page eventSuscriber": {
+	"prefix": "miPageEventSuscriber",
+	"body": [
+	"//Hay diferentes metodos en algunos de ellos deberemos indicar a cual nos referimos",
+	"//OnDeleteRecordEvent",
+	"//OnNewRecordEvent",
+	"//OnBeforeActionEvent",
+	"//OnAfterValidateEvent",
+	"//.... etc",
+	"[EventSubscriber(ObjectType::Page,Page::'Nombre página', //Nombre del objeto ",
+	"'evento',//Evento al que nos suscribimos OnDeleteRecordEvent, OnNewRecordEvent, OnBeforeActionEvent, OnAfterValidateEvent .... etc",
+	"'',  //Nombre del campo o accion si ejecutamos sobre un campo o accion, si no va vacio",
+	"true, //Establézcalo en verdadero para omitir la llamada del método del suscriptor de eventos si la licencia del usuario no cubre la unidad de código del suscriptor de eventos. Si es falso, se produce un error y la ejecución del código se detiene. falso es el predeterminado",
+	"true)] //Establézcalo en verdadero para omitir la llamada del método del suscriptor de eventos si el usuario no tiene los permisos correctos para la unidad de código del suscriptor de eventos. Si es falso, se produce un error y la ejecución del código se detiene. falso es el predeterminado",
+	"",
+	"//Creamos el la funcion, el nombre de las variables se tienen que llamar igual que las ha declarado Navision",
+	"//LOCAL [IntegrationEvent] OnBeforePostSalesDoc(VAR SalesHeader : Record 'nombreVariable';CommitIsSuppressed : Boolean;PreviewMode : Boolean)",
+	"//En este caso seria SalesHeader",
+	"procedure 'Nombre función'(Rec : record 'Tabla'; xrec : record 'Tabla')  // podemos pasar tanto el rec como el xrec",
+	"\tbegin",
+	"\t\t//Código",
+	"\tend;",	
+	"end;"
+	],
+	"description": "Mi Page event suscriber"
+},  
+}

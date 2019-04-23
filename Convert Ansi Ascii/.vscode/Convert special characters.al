@@ -4,18 +4,25 @@
 codeunit 50313 "Convert special characters"
 {
     procedure funAnsi2Ascii(_Text: Text): Text
+    var
+        AsciiStr: Text;
+        AnsiStr: Text;
     begin
         lfunMakeVars(AnsiStr, AsciiStr);
         EXIT(CONVERTSTR(_Text, AnsiStr, AsciiStr));
     end;
 
     procedure funAscii2Ansi(_Text: Text): Text
+    var
+        AsciiStr: Text;
+        AnsiStr: Text;
     begin
         lfunMakeVars(AnsiStr, AsciiStr);
         EXIT(CONVERTSTR(_Text, AsciiStr, AnsiStr));
     end;
 
     procedure funConvertAnsiToAscii_Especial(_Text: Text): Text
+
     begin
         _Text := funAnsi2Ascii(_Text);
         //Convertimos el símbolo Ç al del  (euro), ya que del Ansii al Ascii no se puede interpretar.

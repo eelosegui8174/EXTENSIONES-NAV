@@ -24,8 +24,8 @@ codeunit 50311 ImportarExcel
 
             //Leemos el fichero 
 
-            ExcelBuffer.SetRange("Row No.", 1);
-            IF ExcelBuffer.findset then Begin
+            //ExcelBuffer.SetRange("Row No.", 1);
+            IF ExcelBuffer.FindFirst() then Begin
                 Repeat
                     case excelbuffer."Column No." of
                         1:
@@ -39,8 +39,7 @@ codeunit 50311 ImportarExcel
                         3:
                             Begin
                                 //Cuando estemos en la ultima columna es cuando tenemos todos los campos del registro
-                            End;
-                        else BEGIN
+
 
                                 MaxInventario := ExcelBuffer."Cell Value as Text";
 

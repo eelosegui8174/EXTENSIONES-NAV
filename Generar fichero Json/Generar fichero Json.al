@@ -1,3 +1,4 @@
+//https://community.dynamics.com/business/f/758/t/289143
 codeunit 50314 "Generar fichero Json"
 {
     procedure Crear_Fichero_Json()

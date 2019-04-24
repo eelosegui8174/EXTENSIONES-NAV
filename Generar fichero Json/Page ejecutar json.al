@@ -19,7 +19,7 @@ page 50315 "Ejecutar json"
                         var
                             Crear_Json: Codeunit "Generar fichero Json";
                         begin
-                            Crear_Json.Run();
+                            Crear_Json.Crear_Fichero_Json();
                         end;
                     }
                 }

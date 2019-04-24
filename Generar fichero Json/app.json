@@ -1,0 +1,25 @@
+{
+  "id": "845c1543-18d3-412f-978c-c1e3ddaed8a1",
+  "name": "Generar fichero Json",
+  "publisher": "Default publisher",
+  "version": "1.0.0.0",
+  "brief": "",
+  "description": "",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "13.0.0.0",
+  "application": "13.0.0.0",
+  "idRange": 
+    {
+      "from": 50314,
+      "to": 50315
+    },
+  
+  "showMyCode": true,
+  "runtime": "2.0"
+}

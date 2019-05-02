@@ -17,17 +17,19 @@ codeunit 50310 ExportarAExcel
         IF Productos.FindSet() then begin
 
 
-            //1º Insertamos las cabeceras
-            MakeExcelDataHeader();
-            repeat
 
+            repeat
 
                 CLEAR(MovProducto);
                 MovProducto.SetRange("Item No.", Productos."No.");
-                IF MovProducto.FindSet() then
+                IF MovProducto.FindSet() then begin
+                    //1º Insertamos las cabeceras
+                    RowSeparator(2);  //Lineas a meter entre grupo de productos
+                    MakeExcelDataHeader();
                     repeat
                         MakeExcelDataBody();
                     until MovProducto.Next = 0;
+                END;
             until Productos.Next = 0;
 
             //2º creamos el excel
@@ -68,6 +70,16 @@ codeunit 50310 ExportarAExcel
     procedure MakeExcelNewRow()
     begin
         ExcelBuffer.NewRow();
+    end;
+
+
+    procedure RowSeparator(lines: integer)
+    var
+        Bucle: INteger;
+    begin
+        for Bucle := 1 to lines do begin
+            ExcelBuffer.NewRow();
+        END;
     end;
 
     procedure CreateExcelBook()

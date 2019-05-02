@@ -9,7 +9,7 @@ codeunit 50310 ExportarAExcel
     procedure Insert_Registros_Excel()
     begin
 
-
+        ExcelBuffer.DeleteAll();
 
         //3º rellenamos las lineas
         CLEAR(Productos);
@@ -24,11 +24,15 @@ codeunit 50310 ExportarAExcel
                 MovProducto.SetRange("Item No.", Productos."No.");
                 IF MovProducto.FindSet() then begin
                     //1º Insertamos las cabeceras
-                    RowSeparator(2);  //Lineas a meter entre grupo de productos
+
+
                     MakeExcelDataHeader();
                     repeat
                         MakeExcelDataBody();
                     until MovProducto.Next = 0;
+
+                    RowSeparator(2);  //Lineas a meter entre grupo de productos
+
                 END;
             until Productos.Next = 0;
 

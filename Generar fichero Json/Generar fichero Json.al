@@ -40,6 +40,7 @@ codeunit 50314 "Generar fichero Json"
 
     local procedure Inicializar_Linea_Mov_Producto()
     begin
+
         VJsonObjectLines.Add(vITemLedgerEntry.FieldCaption("Location Code"), '');
         VJsonObjectLines.Add(vITemLedgerEntry.FieldCaption(Quantity), '');
         VJsonObjectLines.Add(vITemLedgerEntry.FieldCaption("Document Date"), '');
@@ -49,9 +50,10 @@ codeunit 50314 "Generar fichero Json"
     local procedure Crear_Linea_Mov_Producto()
     begin
         //Preparamos los valores
-        VJsonObjectLines.Add(vITemLedgerEntry.FieldCaption("Location Code"), vITemLedgerEntry."Location Code");
-        VJsonObjectLines.Add(vITemLedgerEntry.FieldCaption(Quantity), vITemLedgerEntry.Quantity);
-        VJsonObjectLines.Add(vITemLedgerEntry.FieldCaption("Document Date"), vITemLedgerEntry."Document Date");
+
+        VJsonObjectLines.Replace(vITemLedgerEntry.FieldCaption("Location Code"), vITemLedgerEntry."Location Code");
+        VJsonObjectLines.Replace(vITemLedgerEntry.FieldCaption(Quantity), vITemLedgerEntry.Quantity);
+        VJsonObjectLines.Replace(vITemLedgerEntry.FieldCaption("Document Date"), vITemLedgerEntry."Document Date");
 
         //Rellenamos el array
         vJsonArrayLines.Add(vJsonObjectLines);

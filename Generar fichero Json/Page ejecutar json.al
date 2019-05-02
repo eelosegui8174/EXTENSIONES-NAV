@@ -1,6 +1,6 @@
 page 50315 "Ejecutar json"
 {
-    PageType = Worksheet;
+    PageType = ConfirmationDialog;
 
 
     layout

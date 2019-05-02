@@ -15,13 +15,13 @@ codeunit 50310 ExportarAExcel
         CLEAR(Productos);
         Productos.SETFILTER("No.", '%1..%2', '1000', '1500');
         IF Productos.FindSet() then begin
+            //1º creamos el excel
+            CreateExcelBook();
 
+            //2º Insertamos las cabeceras
+            MakeExcelDataHeader();
             repeat
-                //1º creamos el excel
-                CreateExcelBook();
 
-                //2º Insertamos las cabeceras
-                MakeExcelDataHeader();
 
                 CLEAR(MovProducto);
                 MovProducto.SetRange("Item No.", Productos."No.");

@@ -1,1 +1,1 @@
-﻿{"Added":[],"Modified":[],"Removed":[]}
+﻿{"Added":[{"Id":50308,"Kind":17,"Name":"Campos_Formato_Excel_Buffer","PackagePath":"/src/Excel%20Buffer%20table%20extension.al"}],"Modified":[{"Id":50310,"Kind":11,"Name":"ExportarAExcel","PackagePath":"/src/Codeunit%20Exportar%20a%20Excel.al"}],"Removed":[]}

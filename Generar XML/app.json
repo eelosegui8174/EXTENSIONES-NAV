@@ -19,6 +19,5 @@
     "to": 50319
   },
   "runtime": "2.0",
-  "features": ["TranslationFile"],
   "target": "Internal"
 }

@@ -69,7 +69,7 @@ codeunit 50310 ExportarAExcel
         ExcelBuffer.AddColumn(MovProducto."Location Code", false, '', false, false, false, '', ExcelBuffer."Cell Type"::Text);
         ExcelBuffer.AddColumn(MovProducto.Quantity, false, '', false, false, false, '', ExcelBuffer."Cell Type"::Number);
 
-        ExcelBuffer.ad
+
 
 
     end;

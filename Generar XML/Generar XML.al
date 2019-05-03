@@ -29,14 +29,16 @@ codeunit 50319 Generar_XML
             CLEAR(lMovProducto);
             lMovProducto.SETRANGE("Item No.", lProductos."No.");
             if lMovProducto.findset then begin
-                TempXMLBuffer.AddElement(lMovProducto.FieldCaption("Posting Date"), FORMAT(lMovProducto."Posting Date"));
+                REPEAT
+                    TempXMLBuffer.AddElement(lMovProducto.FieldCaption("Posting Date"), FORMAT(lMovProducto."Posting Date"));
+                until lMovProducto.next = 0;
                 TempXMLBuffer.GetParent();
             end;
 
 
         end;
 
-        TempXMLBuffer.save('c:\demo.xml');
+        TempXMLBuffer.save('D:\demo.xml');
 
 
     End;

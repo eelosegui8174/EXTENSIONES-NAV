@@ -1,30 +1,34 @@
 page 50318 Probar
 {
-    PageType = Worksheet;
+    PageType = ConfirmationDialog;
     layout
     {
+
         area(Content)
         {
-                          cuegroup(Accion)
+
+            cuegroup(Accion)
+            {
+
+                Caption = 'Generar XML';
+                actions
                 {
-
-                    Caption = 'Generar XML';
-                    actions
+                    action(Nombre)
                     {
-                        action(Nombre)
-                        {
-                            Image = TileLightGreen;
-                            trigger OnAction()
-                            var
-                                ObjetoLazar: Codeunit Generar_XML;
-                            begin
-                                ObjetoLazar.Run();
-                            end;
+                        Caption = 'Generar xml';
+                        Image = TileSettings;
 
-                        }
+                        trigger OnAction()
+                        var
+                            ObjetoLazar: Codeunit Generar_XML;
+                        begin
+                            ObjetoLazar.Run();
+                        end;
+
                     }
                 }
-            
+            }
+
         }
     }
 }

@@ -1,0 +1,24 @@
+{
+  "id": "8b0d0a77-283a-4eb4-8528-4d2135b7caea",
+  "name": "Generar XML",
+  "publisher": "Default publisher",
+  "version": "1.0.0.0",
+  "brief": "",
+  "description": "",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "11.0.0.0",
+  "application": "11.0.0.0",
+  "idRange": {
+    "from": 50318,
+    "to": 50319
+  },
+  "runtime": "2.0",
+  "features": ["TranslationFile"],
+  "target": "Internal"
+}

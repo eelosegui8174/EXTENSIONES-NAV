@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="es-ES" original="Please update this value">
+    <body>
+      <group id="body">
+        <trans-unit id="Table 2254553953 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Excel Buffer</source>
+          <target>Mem. inter. Excel</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Excel Buffer - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2254553953 - Field 2782707039 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Row No.</source>
+          <target>Nº fila</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Excel Buffer - Field Row No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2254553953 - Field 1373872309 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>xlRowID</source>
+          <target>xlRowID</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Excel Buffer - Field xlRowID - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2254553953 - Field 1389794395 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Column No.</source>
+          <target>Nº columna</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Excel Buffer - Field Column No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2254553953 - Field 2765019851 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>xlColID</source>
+          <target>xlColID</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Excel Buffer - Field xlColID - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2254553953 - Field 3006532294 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Cell Value as Text</source>
+          <target>Valor celda como texto</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Excel Buffer - Field Cell Value as Text - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2254553953 - Field 2790486453 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Comment</source>
+          <target>Comentario</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Excel Buffer - Field Comment - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2254553953 - Field 3304877602 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Formula</source>
+          <target>Fórmula</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Excel Buffer - Field Formula - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2254553953 - Field 442768151 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Bold</source>
+          <target>Negrita</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Excel Buffer - Field Bold - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2254553953 - Field 4279250454 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Italic</source>
+          <target>Itálica</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Excel Buffer - Field Italic - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2254553953 - Field 2944017714 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Underline</source>
+          <target>Subrayar</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Excel Buffer - Field Underline - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2254553953 - Field 1459568092 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>NumberFormat</source>
+          <target>FormatoNúmero</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Excel Buffer - Field NumberFormat - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2254553953 - Field 2048868088 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Formula2</source>
+          <target>Fórmula2</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Excel Buffer - Field Formula2 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2254553953 - Field 1411171471 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Formula3</source>
+          <target>Fórmula3</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Excel Buffer - Field Formula3 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2254553953 - Field 1580080494 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Formula4</source>
+          <target>Fórmula4</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Excel Buffer - Field Formula4 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2254553953 - Field 3621679514 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Cell Type</source>
+          <target>Tipo celda</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Excel Buffer - Field Cell Type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2254553953 - Field 3621679514 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Number,Text,Date,Time</source>
+          <target>Número,Texto,Fecha,Hora</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Excel Buffer - Field Cell Type - Property OptionCaption</note>
+        </trans-unit>
+        <trans-unit id="Table 2254553953 - Field 279485533 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Double Underline</source>
+          <target>Aplicar subrayado doble</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Excel Buffer - Field Double Underline - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2254553953 - NamedType 3114637384" size-unit="char" translate="yes" xml:space="preserve">
+          <source>You must enter a file name.</source>
+          <target>Debe introd. nombre fichero</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Excel Buffer - NamedType Text001</note>
+        </trans-unit>
+        <trans-unit id="Table 2254553953 - NamedType 3752334001" size-unit="char" translate="yes" xml:space="preserve">
+          <source>You must enter an Excel worksheet name.</source>
+          <target>Debe introducir un nombre hoja Excel.</target>
+          <note from="Developer" annotates="general" priority="2">, Comment='{Locked="Excel"}'</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Excel Buffer - NamedType Text002</note>
+        </trans-unit>
+        <trans-unit id="Table 2254553953 - NamedType 95063322" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The file %1 does not exist.</source>
+          <target>El fichero %1 no existe.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Excel Buffer - NamedType Text003</note>
+        </trans-unit>
+        <trans-unit id="Table 2254553953 - NamedType 732759939" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The Excel worksheet %1 does not exist.</source>
+          <target>La hoja Excel  %1 no existe.</target>
+          <note from="Developer" annotates="general" priority="2">, Comment='{Locked="Excel"}'</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Excel Buffer - NamedType Text004</note>
+        </trans-unit>
+        <trans-unit id="Table 2254553953 - NamedType 1370456556" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Creating Excel worksheet...\\</source>
+          <target>Creando hoja Excel...\\</target>
+          <note from="Developer" annotates="general" priority="2">, Comment='{Locked="Excel"}'</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Excel Buffer - NamedType Text005</note>
+        </trans-unit>
+        <trans-unit id="Table 2254553953 - NamedType 3860721549" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Page</source>
+          <target>Página</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Excel Buffer - NamedType PageTxt</note>
+        </trans-unit>
+        <trans-unit id="Table 2254553953 - NamedType 2645849790" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Reading Excel worksheet...\\</source>
+          <target>Leyendo hoja Excel...\\</target>
+          <note from="Developer" annotates="general" priority="2">, Comment='{Locked="Excel"}'</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Excel Buffer - NamedType Text007</note>
+        </trans-unit>
+        <trans-unit id="Table 2254553953 - NamedType 2301836569" size-unit="char" translate="yes" xml:space="preserve">
+          <source>&amp;B</source>
+          <target>&amp;B</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Excel Buffer - NamedType Text013</note>
+        </trans-unit>
+        <trans-unit id="Table 2254553953 - NamedType 4214926420" size-unit="char" translate="yes" xml:space="preserve">
+          <source>&amp;D</source>
+          <target>&amp;D</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Excel Buffer - NamedType Text014</note>
+        </trans-unit>
+        <trans-unit id="Table 2254553953 - NamedType 3577229803" size-unit="char" translate="yes" xml:space="preserve">
+          <source>&amp;P</source>
+          <target>&amp;P</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Excel Buffer - NamedType Text015</note>
+        </trans-unit>
+        <trans-unit id="Table 2254553953 - NamedType 1195352358" size-unit="char" translate="yes" xml:space="preserve">
+          <source>A1</source>
+          <target>A1</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Excel Buffer - NamedType Text016</note>
+        </trans-unit>
+        <trans-unit id="Table 2254553953 - NamedType 557655741" size-unit="char" translate="yes" xml:space="preserve">
+          <source>SUMIF</source>
+          <target>SUMIF</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Excel Buffer - NamedType Text017</note>
+        </trans-unit>
+        <trans-unit id="Table 2254553953 - NamedType 857534312" size-unit="char" translate="yes" xml:space="preserve">
+          <source>#N/A</source>
+          <target>#N/A</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Excel Buffer - NamedType Text018</note>
+        </trans-unit>
+        <trans-unit id="Table 2254553953 - NamedType 219837695" size-unit="char" translate="yes" xml:space="preserve">
+          <source>GLAcc</source>
+          <target>GLAcc</target>
+          <note from="Developer" annotates="general" priority="2">, Comment='{Locked} Used to define an Excel range name. You must refer to Excel rules to change this term.'</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Excel Buffer - NamedType Text019</note>
+        </trans-unit>
+        <trans-unit id="Table 2254553953 - NamedType 1940672225" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Period</source>
+          <target>Period</target>
+          <note from="Developer" annotates="general" priority="2">, Comment='{Locked} Used to define an Excel range name. You must refer to Excel rules to change this term.'</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Excel Buffer - NamedType Text020</note>
+        </trans-unit>
+        <trans-unit id="Table 2254553953 - NamedType 2578368842" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Budget</source>
+          <target>Budget</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Excel Buffer - NamedType Text021</note>
+        </trans-unit>
+        <trans-unit id="Table 2254553953 - NamedType 665278991" size-unit="char" translate="yes" xml:space="preserve">
+          <source>CostAcc</source>
+          <target>CostAcc</target>
+          <note from="Developer" annotates="general" priority="2">, Comment='{Locked} Used to define an Excel range name. You must refer to Excel rules to change this term.'</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Excel Buffer - NamedType Text022</note>
+        </trans-unit>
+        <trans-unit id="Table 2254553953 - NamedType 1302975608" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Information</source>
+          <target>Información</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Excel Buffer - NamedType Text023</note>
+        </trans-unit>
+        <trans-unit id="Table 2254553953 - NamedType 3699446230" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Excel Files (*.xls*)|*.xls*|All Files (*.*)|*.*</source>
+          <target>Archivos de Excel (*.xls*)|*.xls*|Todos los archivos (*.*)|*.*</target>
+          <note from="Developer" annotates="general" priority="2">, Comment='{Split=r''\|\*\..{1,4}\|?''}{Locked="Excel"}'</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Excel Buffer - NamedType Text034</note>
+        </trans-unit>
+        <trans-unit id="Table 2254553953 - NamedType 3061749613" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The operation was canceled.</source>
+          <target>Se canceló la operación.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Excel Buffer - NamedType Text035</note>
+        </trans-unit>
+        <trans-unit id="Table 2254553953 - NamedType 1786356379" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Could not create the Excel workbook.</source>
+          <target>No se pudo crear el libro Excel.</target>
+          <note from="Developer" annotates="general" priority="2">, Comment='{Locked="Excel"}'</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Excel Buffer - NamedType Text037</note>
+        </trans-unit>
+        <trans-unit id="Table 2254553953 - NamedType 342054122" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Global variable %1 is not included for test.</source>
+          <target>La variable global %1 no está incluida para pruebas.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Excel Buffer - NamedType Text038</note>
+        </trans-unit>
+        <trans-unit id="Table 2254553953 - NamedType 3999324801" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Cell type has not been set.</source>
+          <target>No se ha establecido el tipo de celda.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Excel Buffer - NamedType Text039</note>
+        </trans-unit>
+        <trans-unit id="Table 2254553953 - NamedType 2376181702" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Saving the following document: %1.</source>
+          <target>Guardando el documento siguiente: %1.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Excel Buffer - NamedType SavingDocumentMsg</note>
+        </trans-unit>
+        <trans-unit id="Table 2254553953 - NamedType 4095385460" size-unit="char" translate="yes" xml:space="preserve">
+          <source>.xlsx</source>
+          <target>.xlsx</target>
+          <note from="Developer" annotates="general" priority="2">, Locked=true</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Excel Buffer - NamedType ExcelFileExtensionTok</note>
+        </trans-unit>
+        <trans-unit id="Table 2254553953 - NamedType 129577178" size-unit="char" translate="yes" xml:space="preserve">
+          <source>&lt;xml xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:x="urn:schemas-microsoft-com:office:excel"&gt;&lt;o:shapelayout v:ext="edit"&gt;&lt;o:idmap v:ext="edit" data="1"/&gt;&lt;/o:shapelayout&gt;&lt;v:shapetype id="_x0000_t202" coordsize="21600,21600" o:spt="202"  path="m,l,21600r21600,l21600,xe"&gt;&lt;v:stroke joinstyle="miter"/&gt;&lt;v:path gradientshapeok="t" o:connecttype="rect"/&gt;&lt;/v:shapetype&gt;</source>
+          <target>&lt;xml xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:x="urn:schemas-microsoft-com:office:excel"&gt;&lt;o:shapelayout v:ext="edit"&gt;&lt;o:idmap v:ext="edit" data="1"/&gt;&lt;/o:shapelayout&gt;&lt;v:shapetype id="_x0000_t202" coordsize="21600,21600" o:spt="202"  path="m,l,21600r21600,l21600,xe"&gt;&lt;v:stroke joinstyle="miter"/&gt;&lt;v:path gradientshapeok="t" o:connecttype="rect"/&gt;&lt;/v:shapetype&gt;</target>
+          <note from="Developer" annotates="general" priority="2">, Locked=true</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Excel Buffer - NamedType VmlDrawingXmlTxt</note>
+        </trans-unit>
+        <trans-unit id="Table 2254553953 - NamedType 2061003519" size-unit="char" translate="yes" xml:space="preserve">
+          <source>&lt;/xml&gt;</source>
+          <target>&lt;/xml&gt;</target>
+          <note from="Developer" annotates="general" priority="2">, Locked=true</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Excel Buffer - NamedType EndXmlTokenTxt</note>
+        </trans-unit>
+        <trans-unit id="Table 2254553953 - NamedType 848050347" size-unit="char" translate="yes" xml:space="preserve">
+          <source>%1,15,%2,10,%3,31,8,9</source>
+          <target>%1,15,%2,10,%3,31,8,9</target>
+          <note from="Developer" annotates="general" priority="2">, Locked=true</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Excel Buffer - NamedType VmlShapeAnchorTxt</note>
+        </trans-unit>
+        <trans-unit id="Table 2254553953 - NamedType 723475190" size-unit="char" translate="yes" xml:space="preserve">
+          <source>&lt;v:shape id="%1" type="#_x0000_t202" style='position:absolute;  margin-left:59.25pt;margin-top:1.5pt;width:96pt;height:55.5pt;z-index:1;  visibility:hidden' fillcolor="#ffffe1" o:insetmode="auto"&gt;&lt;v:fill color2="#ffffe1"/&gt;&lt;v:shadow color="black" obscured="t"/&gt;&lt;v:path o:connecttype="none"/&gt;&lt;v:textbox style='mso-direction-alt:auto'&gt;&lt;div style='text-align:left'/&gt;&lt;/v:textbox&gt;&lt;x:ClientData ObjectType="Note"&gt;&lt;x:MoveWithCells/&gt;&lt;x:SizeWithCells/&gt;&lt;x:Anchor&gt;%2&lt;/x:Anchor&gt;&lt;x:AutoFill&gt;False&lt;/x:AutoFill&gt;&lt;x:Row&gt;%3&lt;/x:Row&gt;&lt;x:Column&gt;%4&lt;/x:Column&gt;&lt;/x:ClientData&gt;&lt;/v:shape&gt;</source>
+          <target>&lt;v:shape id="%1" type="#_x0000_t202" style='position:absolute;  margin-left:59.25pt;margin-top:1.5pt;width:96pt;height:55.5pt;z-index:1;  visibility:hidden' fillcolor="#ffffe1" o:insetmode="auto"&gt;&lt;v:fill color2="#ffffe1"/&gt;&lt;v:shadow color="black" obscured="t"/&gt;&lt;v:path o:connecttype="none"/&gt;&lt;v:textbox style='mso-direction-alt:auto'&gt;&lt;div style='text-align:left'/&gt;&lt;/v:textbox&gt;&lt;x:ClientData ObjectType="Note"&gt;&lt;x:MoveWithCells/&gt;&lt;x:SizeWithCells/&gt;&lt;x:Anchor&gt;%2&lt;/x:Anchor&gt;&lt;x:AutoFill&gt;False&lt;/x:AutoFill&gt;&lt;x:Row&gt;%3&lt;/x:Row&gt;&lt;x:Column&gt;%4&lt;/x:Column&gt;&lt;/x:ClientData&gt;&lt;/v:shape&gt;</target>
+          <note from="Developer" annotates="general" priority="2">, Locked=true</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Excel Buffer - NamedType CommentVmlShapeXmlTxt</note>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

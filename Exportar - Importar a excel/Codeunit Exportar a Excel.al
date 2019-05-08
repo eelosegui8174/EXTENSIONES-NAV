@@ -23,9 +23,8 @@ codeunit 50310 ExportarAExcel
                 CLEAR(MovProducto);
                 MovProducto.SetRange("Item No.", Productos."No.");
                 IF MovProducto.FindSet() then begin
+
                     //1º Insertamos las cabeceras
-
-
                     MakeExcelDataHeader();
                     repeat
                         MakeExcelDataBody();
@@ -68,7 +67,6 @@ codeunit 50310 ExportarAExcel
         ExcelBuffer.AddColumn(MovProducto."Document Date", false, '', false, false, false, '', ExcelBuffer."Cell Type"::Date);
         ExcelBuffer.AddColumn(MovProducto."Location Code", false, '', false, false, false, '', ExcelBuffer."Cell Type"::Text);
         ExcelBuffer.AddColumn(MovProducto.Quantity, false, '', false, false, false, '', ExcelBuffer."Cell Type"::Number);
-
 
 
 

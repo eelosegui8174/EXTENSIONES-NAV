@@ -80,6 +80,7 @@ codeunit 50320 ExportarAExcelFont
     procedure MakeExcelNewRow()
     begin
         //ExcelBuffer.NewRow();
+        CurrentCol := 0;
         CurrentRow := CurrentRow + 1;
     end;
 

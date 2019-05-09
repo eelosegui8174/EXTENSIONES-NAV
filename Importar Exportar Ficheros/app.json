@@ -1,0 +1,25 @@
+{
+  "id": "85722ba5-f9ef-49a7-a991-a9f89d462308",
+  "name": "Ficheros",
+  "publisher": "Default publisher",
+  "version": "1.0.0.0",
+  "brief": "",
+  "description": "",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "13.0.0.0",
+  "application": "13.0.0.0",
+  "idRange": {
+    "from": 50302,
+    "to": 50305
+  },
+  "showMyCode": true,
+  "runtime": "2.0",
+  "target": "Internal"
+ 
+}

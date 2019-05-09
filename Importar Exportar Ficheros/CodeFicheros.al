@@ -10,8 +10,10 @@ codeunit 50302 GestionFicheros
 
     procedure SeleccionFichero(var Ruta: Text);
     begin
+        //Sirve cualquiera de las dos
         //Ruta := FileManagement.OpenFileDialog(Seleccion, '', 'TXT');
         Ruta := FileManagement.UploadFile(Seleccion, 'TXT');
+
     end;
 
 
@@ -84,7 +86,43 @@ codeunit 50302 GestionFicheros
     //CREAR FICHEROS
     //**************************************************************
     procedure CrearFichero(Nombre: Text)
+    var
+        InStr: InStream;
+        OutStr: OutStream;
+        tmpBlob: Record TempBlob temporary;
+        CR: char;
+        LF: char;
+        TAB: Char;
+        lItem: record Item;
     begin
+        CLEAR(lItem);
+        lItem.SetRange("No.", '10000', '1150');
+        IF lItem.findset then begin
+
+            CR := 13;
+            LF := 10;
+            TAB := 9;
+            tmpBlob.Blob.CreateOutStream(OutStr);
+
+            OutStr.WriteText(lItem.FieldCaption("No.") + TAB);
+            OutStr.WriteText(lItem.FieldCaption(Description) + TAB);
+            OutStr.WriteText(lItem.FieldCaption("Unit Price") + CR + LF);
+
+            OutStr.WriteText(PadStr('', StrLen(lItem.FieldCaption("No.")), '_') + TAB);
+            OutStr.WriteText(PadStr('', StrLen(lItem.FieldCaption(Description)), '_') + TAB);
+            OutStr.WriteText(PadStr('', StrLen(lItem.FieldCaption("Unit Price")), '_') + CR + LF);
+            REPEAT
+                OutStr.WriteText(lItem."No." + TAB);
+                OutStr.WriteText(lItem.Description + TAB);
+                OutStr.WriteText(FORMAT(litem."Unit Price") + CR + LF);
+                OutStr.WriteText(CR);
+            UNTIL lItem.Next = 0;
+
+            tmpBlob.Blob.CreateInStream(InStr);
+            //Genera el fichero directamente a la ruta indicada
+            DownloadFromStream(InStr, '', '', '', Nombre);
+
+        END;
 
     end;
 

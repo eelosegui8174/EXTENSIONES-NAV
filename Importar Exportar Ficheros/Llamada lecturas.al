@@ -36,6 +36,36 @@ page 50303 LlemadaFichero
                         end;
 
                     }
+                    action(CrearUnFichero)
+                    {
+                        Caption = 'Crear fichero txt';
+                        Image = TileReport;
+
+                        trigger OnAction()
+                        var
+                            GestionFicheros: Codeunit GestionFicheros;
+                        begin
+
+                            GestionFicheros.CrearFichero('D:\demo.txt');
+
+                        end;
+
+                    }
+                    action(ModificarFichero)
+                    {
+                        Caption = 'Modificar fichero txt';
+                        Image = TileRed;
+
+                        trigger OnAction()
+                        var
+                            GestionFicheros: Codeunit GestionFicheros;
+                        begin
+
+                            meesage('Pendiente');
+
+                        end;
+
+                    }
                 }
             }
         }

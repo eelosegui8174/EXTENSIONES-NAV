@@ -20,15 +20,29 @@ page 50318 Probar
 
                         trigger OnAction()
                         var
-                            ObjetoLazar: Codeunit Generar_XML;
+                            ObjetoLazar: Codeunit Generar_XML_1;
                         begin
                             ObjetoLazar.Run();
                         end;
 
                     }
+
+                    action(Nombre2)
+                    {
+                        Caption = 'Generar xml desde codeunit';
+                        Image = TileSettings;
+
+                        trigger OnAction()
+                        var
+                            ObjetoLazar: Codeunit Generar_XML_1;
+                        begin
+                            ObjetoLazar.Exportar_Con_Codeunit_Export();
+                        end;
+
+                    }
                 }
             }
-
         }
+
     }
 }

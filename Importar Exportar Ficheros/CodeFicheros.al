@@ -85,7 +85,7 @@ codeunit 50302 GestionFicheros
     //**************************************************************
     //CREAR FICHEROS
     //**************************************************************
-    procedure CrearFichero(Nombre: Text)
+    procedure CrearFichero(Nombre_Fichero: Text)
     var
         InStr: InStream;
         OutStr: OutStream;
@@ -94,6 +94,7 @@ codeunit 50302 GestionFicheros
         LF: char;
         TAB: Char;
         lItem: record Item;
+
     begin
         CLEAR(lItem);
         lItem.SetRange("No.", '10000', '1150');
@@ -120,7 +121,10 @@ codeunit 50302 GestionFicheros
 
             tmpBlob.Blob.CreateInStream(InStr);
             //Genera el fichero directamente a la ruta indicada
-            DownloadFromStream(InStr, '', '', '', Nombre);
+
+            //DownloadFromStream(InStr, 'Fichero', 'D:\', '', Nombre);
+            DOWNLOADFROMSTREAM(InStr, 'Export', 'D:\', 'All Files (*.*)|*.*', Nombre_Fichero)
+
 
         END;
 

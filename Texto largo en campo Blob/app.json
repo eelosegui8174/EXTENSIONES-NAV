@@ -1,0 +1,25 @@
+{
+  "id": "3e990d04-f9fd-4953-89ca-baabaaa18888",
+  "name": "Texto largo en campo Blob",
+  "publisher": "Default publisher",
+  "version": "1.0.0.0",
+  "brief": "",
+  "description": "",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "13.0.0.0",
+  "application": "13.0.0.0",
+  "idRange":  
+    {
+      "from": 50321,
+      "to": 50321
+    }, 
+  "showMyCode": true,
+  "runtime": "2.0",
+  "target": "Internal"
+}

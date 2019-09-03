@@ -1,0 +1,25 @@
+{
+  "id": "8d77fde2-ae71-4ae2-85bf-dc4b84e39dcd",
+  "name": "Proyecto",
+  "publisher": "Default publisher",
+  "version": "1.0.0.0",
+  "brief": "",
+  "description": "",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "./Iconos/Taller.png",
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "11.0.0.0",
+  "application": "11.0.0.0",
+  "idRange":
+    {
+      "from": 50400,
+      "to": 50420
+    }
+  ,
+  "showMyCode": true,
+  "runtime": "2.0"
+}

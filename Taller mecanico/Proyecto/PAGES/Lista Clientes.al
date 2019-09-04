@@ -14,6 +14,7 @@ page 50402 "Lista clientes"
                 field("Codigo Taller"; "Codigo Taller")
                 {
                     ApplicationArea = All;
+                    CaptionML = ENU = 'ddd';
                 }
                 field("Codigo Empleado"; "Codigo Cliente")
                 {

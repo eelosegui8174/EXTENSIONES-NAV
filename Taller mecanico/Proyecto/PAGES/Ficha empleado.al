@@ -3,7 +3,7 @@ page 50421 "Ficha empleado"
 
     PageType = Card;
     SourceTable = Empleados;
-    Caption = 'Ficha empleado';
+    CaptionML = ENU = 'Employe card', ESP = 'Ficha empleado';
 
     layout
     {

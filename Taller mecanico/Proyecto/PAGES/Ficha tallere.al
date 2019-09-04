@@ -3,7 +3,8 @@ page 50420 "Ficha taller"
 
     PageType = Card;
     SourceTable = Talleres;
-    Caption = 'Ficha taller';
+    CaptionML = ENU = 'Workshop card', ESP = 'Ficha taller';
+    CardPageId = "Lista Talleres";
 
     layout
     {

@@ -4,7 +4,7 @@ page 50403 "Lista vehiculos"
     PageType = List;
     SourceTable = Vehiculos;
     Caption = 'Lista vehiculos';
-
+    CardPageId = "Ficha vehiculo";
     layout
     {
         area(content)

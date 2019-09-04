@@ -1,9 +1,10 @@
-page 50422 "Ficha cliente"
+page 50423 "Ficha vehiculo"
 {
 
     PageType = Card;
-    SourceTable = Clientes;
-    CaptionML = ENU = 'Customer card', ESP = 'Ficha clinete';
+    SourceTable = Vehiculos;
+    CaptionML = ENU = 'Vehicle card', ESP = 'Ficha vehiculo';
+
 
     layout
     {
@@ -11,40 +12,41 @@ page 50422 "Ficha cliente"
         {
             group(General)
             {
-                field("Codigo Cliente"; "Codigo Cliente")
-                {
-                    ApplicationArea = All;
-                }
                 field("Codigo Taller"; "Codigo Taller")
                 {
                     ApplicationArea = All;
                 }
-                field(Apellido; Apellido)
+                field(Matricula; Matricula)
                 {
                     ApplicationArea = All;
                 }
-                field(Apellido2; Apellido2)
-                {
-                    ApplicationArea = All;
-                }
-                field(DNI; DNI)
-                {
-                    ApplicationArea = All;
-                }
-                field(Nombre; Nombre)
-                {
-                    ApplicationArea = All;
-                }
-                field(Telefono; Telefono)
+                field(Tipo; Tipo)
                 {
                     ApplicationArea = All;
                 }
             }
-            group(Acciones)
+            group(Informacion)
             {
-            }
-            group(Navegar)
-            {
+                field(Marca; Marca)
+                {
+                    ApplicationArea = All;
+                }
+                field("Descripcion marca"; "Descripcion marca")
+                {
+                    ApplicationArea = All;
+                }
+                field(Modelo; Modelo)
+                {
+                    ApplicationArea = All;
+                }
+                field("Descripcion modelo"; "Descripcion modelo")
+                {
+                    ApplicationArea = All;
+                }
+                field("Partes dados"; "Partes dados")
+                {
+                    ApplicationArea = All;
+                }
             }
         }
     }

@@ -4,7 +4,7 @@ page 50402 "Lista clientes"
     ApplicationArea = All;
     UsageCategory = Lists;
     SourceTable = Clientes;
-
+    CardPageId = "Ficha cliente";
     layout
     {
         area(Content)

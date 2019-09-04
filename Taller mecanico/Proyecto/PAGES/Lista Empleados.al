@@ -4,7 +4,7 @@ page 50401 "Lista Empleados"
     ApplicationArea = All;
     UsageCategory = Lists;
     SourceTable = Empleados;
-
+    CardPageId = "Ficha empleado";
     layout
     {
         area(Content)

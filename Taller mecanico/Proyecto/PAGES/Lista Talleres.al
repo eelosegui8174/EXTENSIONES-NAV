@@ -4,7 +4,7 @@ page 50400 "Lista Talleres"
     ApplicationArea = All;
     UsageCategory = Lists;
     SourceTable = Talleres;
-
+    CardPageId = "Ficha taller";
     layout
     {
         area(Content)

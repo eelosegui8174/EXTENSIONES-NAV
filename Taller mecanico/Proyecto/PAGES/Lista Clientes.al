@@ -51,15 +51,22 @@ page 50402 "Lista clientes"
     }
     actions
     {
-        area(Processing)
+
+        area(Navigation)
         {
-            action(ActionName)
+            action(FichaCliente)
             {
                 ApplicationArea = All;
-
+                CaptionML = ENU = 'Customer card', ESP = 'Ficha cliente';
                 trigger OnAction();
+                var
+                    lFichaCliente: Page "Ficha cliente";
+                    lCliente: Record Clientes;
                 begin
-
+                    CLEAR(lCliente);
+                    lCliente.SetRange("Codigo Cliente", "Codigo Cliente");
+                    lFichaCliente.SetTableView(lCliente);
+                    lFichaCliente.Run();
                 end;
             }
         }

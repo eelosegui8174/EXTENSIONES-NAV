@@ -60,6 +60,7 @@ table 50400 Talleres
         }
         field(50; "Logo"; Blob)
         {
+            Subtype = Bitmap;
             CaptionML = ENU = 'Logo', ESP = 'Logo';
         }
         field(55; Empleados; integer)

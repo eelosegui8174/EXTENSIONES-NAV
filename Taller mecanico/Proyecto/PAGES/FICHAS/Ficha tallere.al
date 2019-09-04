@@ -12,6 +12,7 @@ page 50420 "Ficha taller"
         {
             group(gGeneral)
             {
+                CaptionML = ENU = 'General', ESP = 'General';
                 field(Codigo; Codigo)
                 {
                     ApplicationArea = All;
@@ -32,16 +33,19 @@ page 50420 "Ficha taller"
                 {
                     ApplicationArea = All;
                 }
-                field(Logo; Logo)
+                group(gLogo)
                 {
-                    ApplicationArea = All;
+                    Caption = '';
+                    field(Logo; Logo)
+                    {
+                        ApplicationArea = All;
+                    }
                 }
-
 
             }
             group(gDireccion)
             {
-
+                CaptionML = ENU = 'Direcction', ESP = 'Dirección';
                 field(Poblacion; Poblacion)
                 {
                     ApplicationArea = All;
@@ -66,6 +70,7 @@ page 50420 "Ficha taller"
             }
             group(gComunicación)
             {
+                CaptionML = ENU = 'COmunication', ESP = 'Comunicación';
                 field(Telefono; Telefono)
                 {
                     ApplicationArea = All;

@@ -12,6 +12,7 @@ page 50400 "Lista Talleres"
             repeater(Talleres)
             {
                 field(Codigo; Codigo) { }
+
                 field(Nombre; Nombre) { }
                 field(Empleados; Empleados) { }
                 field(Clientes; Clientes) { }

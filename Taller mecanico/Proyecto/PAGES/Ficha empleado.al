@@ -1,4 +1,4 @@
-page 50405 "Ficha empleado"
+page 50421 "Ficha empleado"
 {
 
     PageType = Card;

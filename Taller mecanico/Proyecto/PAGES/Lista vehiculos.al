@@ -1,50 +1,50 @@
-page 50422 "Ficha cliente"
+page 50403 "Lista vehiculos"
 {
 
-    PageType = Card;
-    SourceTable = Clientes;
-    Caption = 'Ficha cliente';
+    PageType = List;
+    SourceTable = Vehiculos;
+    Caption = 'Lista vehiculos';
 
     layout
     {
         area(content)
         {
-            group(General)
+            repeater(General)
             {
-                field("Codigo Cliente"; "Codigo Cliente")
-                {
-                    ApplicationArea = All;
-                }
                 field("Codigo Taller"; "Codigo Taller")
                 {
                     ApplicationArea = All;
                 }
-                field(Apellido; Apellido)
+                field(Matricula; Matricula)
                 {
                     ApplicationArea = All;
                 }
-                field(Apellido2; Apellido2)
+                field(Marca; Marca)
                 {
                     ApplicationArea = All;
                 }
-                field(DNI; DNI)
+                field("Descripcion marca"; "Descripcion marca")
                 {
                     ApplicationArea = All;
                 }
-                field(Nombre; Nombre)
+                field(Modelo; Modelo)
                 {
                     ApplicationArea = All;
                 }
-                field(Telefono; Telefono)
+                field("Descripcion modelo"; "Descripcion modelo")
                 {
                     ApplicationArea = All;
                 }
-            }
-            group(Acciones)
-            {
-            }
-            group(Navegar)
-            {
+
+                field(Tipo; Tipo)
+                {
+                    ApplicationArea = All;
+                }
+                field("Partes dados"; "Partes dados")
+                {
+                    ApplicationArea = All;
+                }
+
             }
         }
     }

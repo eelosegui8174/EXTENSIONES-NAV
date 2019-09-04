@@ -1,4 +1,4 @@
-page 50403 "Ficha taller"
+page 50420 "Ficha taller"
 {
 
     PageType = Card;

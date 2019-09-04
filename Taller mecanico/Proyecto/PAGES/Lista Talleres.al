@@ -74,7 +74,7 @@ page 50400 "Lista Talleres"
                     Clear(lEmpleados);
                     lEmpleados.SetRange("Codigo Taller", Codigo);
                     // if not lEmpleados.IsEmpty then begin
-                    CLEAR(pEmpleados);
+
                     pEmpleados.SetTableView(lEmpleados);
                     pEmpleados.Run();
                     //end;
@@ -99,6 +99,28 @@ page 50400 "Lista Talleres"
                     CLEAR(lClientes);
                     pClientes.SetTableView(lClientes);
                     pClientes.Run();
+                    //enpClientesd;
+                end;
+            }
+            action(ListaVehiculos)
+            {
+                ApplicationArea = All;
+                Image = ShipAddress;
+                Promoted = true;
+                PromotedIsBig = true;
+                PromotedCategory = Process;
+                CaptionML = ENU = 'Vehicles', ESP = 'Vehículos';
+                trigger OnAction();
+                var
+                    lVehiculos: record Vehiculos;
+                    pVehiculos: page "Lista vehiculos";
+                begin
+                    Clear(lVehiculos);
+                    lVehiculos.SetRange("Codigo Taller", Codigo);
+                    // if not lEmpleados.IsEmpty then begin
+
+                    pVehiculos.SetTableView(lVehiculos);
+                    pVehiculos.Run();
                     //enpClientesd;
                 end;
             }

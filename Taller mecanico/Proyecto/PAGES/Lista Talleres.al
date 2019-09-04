@@ -64,6 +64,7 @@ page 50400 "Lista Talleres"
                 Image = Customer;
                 Promoted = true;
                 PromotedIsBig = true;
+                PromotedCategory = Process;
                 CaptionML = ENU = 'Employers', ESP = 'Empleados';
                 trigger OnAction();
                 var
@@ -85,6 +86,7 @@ page 50400 "Lista Talleres"
                 Image = Employee;
                 Promoted = true;
                 PromotedIsBig = true;
+                PromotedCategory = Process;
                 CaptionML = ENU = 'Clientes', ESP = 'Clientes';
                 trigger OnAction();
                 var

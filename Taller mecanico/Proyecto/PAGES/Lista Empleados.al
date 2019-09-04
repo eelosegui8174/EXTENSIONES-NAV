@@ -53,13 +53,23 @@ page 50401 "Lista Empleados"
     {
         area(Processing)
         {
-            action(ActionName)
+            action(FichaEmpleado)
             {
                 ApplicationArea = All;
-
+                CaptionML = ENU = 'Employ card', ESP = 'Ficha empleado';
+                Image = Employee;
+                Promoted = true;
+                PromotedIsBig = true;
+                PromotedCategory = Process;
                 trigger OnAction();
+                var
+                    lFichaEmpleado: Page "Ficha empleado";
+                    lEmpleado: Record Empleados;
                 begin
-
+                    CLEAR(lEmpleado);
+                    lEmpleado.SetRange("Codigo Empleado", "Codigo Empleado");
+                    lFichaEmpleado.SetTableView(lEmpleado);
+                    lFichaEmpleado.Run();
                 end;
             }
         }

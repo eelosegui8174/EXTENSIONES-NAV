@@ -31,6 +31,8 @@ page 50400 "Lista Talleres"
                 {
                     ApplicationArea = All;
                 }
+
+
                 field(Telefono; Telefono)
                 {
                     ApplicationArea = All;
@@ -127,4 +129,6 @@ page 50400 "Lista Talleres"
             }
         }
     }
+
+
 }

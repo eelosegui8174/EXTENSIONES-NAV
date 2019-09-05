@@ -40,6 +40,7 @@ table 50400 Talleres
         {
             CaptionML = ENU = 'County', ESP = 'Provincia';
         }
+
         field(30; "Telefono"; Text[50])
         {
             CaptionML = ENU = 'Telephone', ESP = 'Teléfono';
@@ -86,5 +87,6 @@ table 50400 Talleres
             Clustered = true;
         }
     }
+    var
 
 }

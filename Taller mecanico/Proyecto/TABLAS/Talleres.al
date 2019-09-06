@@ -59,9 +59,9 @@ table 50400 Talleres
         {
             CaptionML = ENU = 'Web', ESP = 'Web';
         }
-        field(50; "Logo"; Blob)
+        field(50; "Logo"; Media)
         {
-            Subtype = Bitmap;
+
             CaptionML = ENU = 'Logo', ESP = 'Logo';
         }
         field(55; Empleados; integer)
@@ -90,3 +90,4 @@ table 50400 Talleres
     var
 
 }
+

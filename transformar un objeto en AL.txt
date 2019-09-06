@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+﻿<<<<<<< HEAD
 
 Nos creamos dos carpetas, en este ejemplo:
 -	C:\CAL2AL
@@ -11,7 +11,7 @@ Primero ejecutamos la instrucción finsql de los objetos deseados, ejemplos:
 finsql.exe Command=ExportToNewSyntax, File="C:\CAL2AL\tables.txt", Database="NAV2018_CU6", ServerName=ESBCN-DXS8717NB, filter=type="table";ID="112|114|1275"
 finsql.exe Command=ExportToNewSyntax, File="C:\CAL2AL\codeunits.txt", Database="NAV2018_CU6", ServerName=ESBCN-DXS8717NB, filter=type="codeunit";ID="50000"
 finsql.exe Command=ExportToNewSyntax, File="C:\CAL2AL\xmlports.txt", Database="NAV2018_CU6", ServerName=ESBCN-DXS8717NB, filter=type="xmlport";ID="50000..50001"
-finsql.exe Command=ExportToNewSyntax, File="C:\CAL2AL\pages.txt", Database="NAV2018_CU6", ServerName=ESBCN-DXS8717NB, filter=type="page";ID="132|134|143|144|1275"
+finsql.exe Command=ExportToNewSyntax, File="C:\CAL2AL\pages.txt", Database="Demo Database NAV (13-0)", ServerName=DESKTOP-HMOIFH3, filter=type="page";ID="132|134"
 finsql.exe Command=ExportToNewSyntax, File="C:\CAL2AL\reports.txt", Database="NAV2018_CU6", ServerName=ESBCN-DXS8717NB, filter=type="report";ID="206"
 
 Se irán creando.txt en la ruta C:\CAL2AL\

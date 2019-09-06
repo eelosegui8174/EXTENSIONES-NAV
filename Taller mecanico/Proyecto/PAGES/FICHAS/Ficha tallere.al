@@ -39,6 +39,7 @@ page 50420 "Ficha taller"
                     field(Logo; Logo)
                     {
                         ApplicationArea = All;
+                        Visible = false;
                     }
                 }
 
@@ -86,6 +87,17 @@ page 50420 "Ficha taller"
             }
 
 
+
+        }
+
+        area(factboxes)
+        {
+            part(dddd; "Imagen Taller")
+            {
+                ApplicationArea = Basic, Suite;
+                SubPageLink = Codigo = FIELD (Codigo);
+
+            }
 
         }
     }

@@ -11,6 +11,7 @@ table 50400 Talleres
         field(10; "Nombre"; Text[50])
         {
             CaptionML = ENU = 'Name', ESP = 'Nombre';
+
         }
         field(20; "Direccion"; Text[50])
         {
@@ -61,24 +62,25 @@ table 50400 Talleres
         }
         field(50; "Logo"; Media)
         {
-
+            ExtendedDatatype = Person;
             CaptionML = ENU = 'Logo', ESP = 'Logo';
         }
         field(55; Empleados; integer)
         {
             Editable = false;
             FieldClass = FlowField;
-            CalcFormula = count (Empleados where ("Codigo Taller" = field (Codigo)));
+            CalcFormula = count (Employee where ("Codigo Taller" = field (Codigo)));
 
         }
         field(56; Clientes; integer)
         {
             Editable = false;
             FieldClass = FlowField;
-            CalcFormula = count (Clientes where ("Codigo Taller" = field (Codigo)));
+            CalcFormula = count (Customer where ("Codigo Taller" = field (Codigo)));
 
         }
     }
+
 
     keys
     {
@@ -87,7 +89,17 @@ table 50400 Talleres
             Clustered = true;
         }
     }
-    var
+
+    fieldgroups
+    {
+        fieldgroup(Dropdown; Codigo, Nombre)
+        {
+
+        }
+        fieldgroup(Brick; Codigo, Nombre, Clientes, Empleados, Logo)
+        {
+
+        }
+    }
 
 }
-

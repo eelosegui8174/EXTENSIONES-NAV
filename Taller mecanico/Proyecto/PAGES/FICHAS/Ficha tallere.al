@@ -5,7 +5,7 @@ page 50420 "Ficha taller"
     SourceTable = Talleres;
     CaptionML = ENU = 'Workshop card', ESP = 'Ficha taller';
     CardPageId = "Lista Talleres";
-
+    UsageCategory = Documents;
     layout
     {
         area(content)
@@ -92,11 +92,17 @@ page 50420 "Ficha taller"
 
         area(factboxes)
         {
-            part(dddd; "Imagen Taller")
+            part(Imagen; "Imagen Taller")
             {
+                CaptionML = ENU = 'Image', ESP = 'Imagen';
                 ApplicationArea = Basic, Suite;
-                SubPageLink = Codigo = FIELD (Codigo);
+                SubPageLink = Codigo = FIELD(Codigo);
 
+            }
+            part(Info; "FactBox Info Taller")
+            {
+                CaptionML = ENU = 'Info', ESP = 'Info';
+                SubPageLink = Codigo = field(Codigo);
             }
 
         }

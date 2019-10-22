@@ -1,7 +1,9 @@
 {
     "version": "0.2.0",
     "configurations": [
+        
         {
+            
             "type": "al",
             "request": "launch",
             "name": "Your own server",
@@ -12,7 +14,6 @@
             "startupObjectType": "Page",
             "breakOnError": true,
             "launchBrowser": true,
-            "schemaUpdateMode":"ForceSync"
-         }
+            "schemaUpdateMode":"Recreate"         }
     ]
 }

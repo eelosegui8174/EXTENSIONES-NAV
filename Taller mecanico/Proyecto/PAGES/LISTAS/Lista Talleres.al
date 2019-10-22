@@ -71,8 +71,8 @@ page 50400 "Lista Talleres"
                 CaptionML = ENU = 'Employers', ESP = 'Empleados';
                 trigger OnAction();
                 var
-                    lEmpleados: record Empleados;
-                    pEmpleados: page "Lista Empleados";
+                    lEmpleados: record Employee;
+                    pEmpleados: page "Employee List";
                 begin
                     Clear(lEmpleados);
                     lEmpleados.SetRange("Codigo Taller", Codigo);
@@ -93,8 +93,8 @@ page 50400 "Lista Talleres"
                 CaptionML = ENU = 'Clientes', ESP = 'Clientes';
                 trigger OnAction();
                 var
-                    lClientes: record Clientes;
-                    pClientes: page "Lista clientes";
+                    lClientes: record Customer;
+                    pClientes: page "Customer List";
                 begin
                     Clear(lClientes);
                     lClientes.SetRange("Codigo Taller", Codigo);

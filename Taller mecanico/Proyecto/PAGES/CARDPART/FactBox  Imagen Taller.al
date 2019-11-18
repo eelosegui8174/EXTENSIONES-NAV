@@ -43,10 +43,10 @@ page 50404 "Imagen Taller"
                     TESTFIELD(Codigo);
 
 
-                    IF Logo.HASVALUE THEN
+                    IF Logo.HASVALUE THEN BEGIN
                         IF NOT CONFIRM(OverrideImageQst) THEN
                             EXIT;
-
+                    END;
                     FileName := FileManagement.UploadFile(SelectPictureTxt, ClientFileName);
                     IF FileName = '' THEN
                         EXIT;

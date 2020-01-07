@@ -24,13 +24,13 @@ codeunit 50100 "Cosmo Eventos Calidad"
     [EventSubscriber(ObjectType::Page, Page::"Customer List", 'OnAfterActionEvent', 'CosmoLogCalidadEnvios', true, true)]
     local procedure CustList_On_action_LogCalidadEnvios(Rec: Record Customer)
     begin
-        cControlDeCalidad.AbreLogCalidadEnvios(rec);
+        cControlDeCalidad.AbreLogCalidadEnvios(rec, '');
     end;
 
     [EventSubscriber(ObjectType::Page, Page::"Customer Card", 'OnAfterActionEvent', 'CosmoLogCalidadEnvios', true, true)]
     local procedure CustCard_On_action_LogCalidadEnvios(Rec: Record Customer)
     begin
-        cControlDeCalidad.AbreLogCalidadEnvios(rec);
+        cControlDeCalidad.AbreLogCalidadEnvios(rec, '');
     end;
 
     //------------------------------------------------------------------------------------------------------
@@ -77,6 +77,12 @@ codeunit 50100 "Cosmo Eventos Calidad"
     begin
         cControlDeCalidad.On_Aftervalidate_RequestDate(Rec, xRec);
     end;
+
+    //------------------------------------------------------------------------------------------------------
+    //CODEUNIT 80
+    //------------------------------------------------------------------------------------------------------
+
+
     //------------------------------------------------------------------------------------------------------
     //CODEUNIT 80
     //------------------------------------------------------------------------------------------------------

@@ -76,7 +76,7 @@ codeunit 50101 "Cosmo Control de calidad"
                 tCalidad.INSERT(TRUE);
             END;
 
-            Actualizar_Campos_Globales(T37."Document No.");
+            Actualizar_Campos_Globales(T37."Document No.", '');
         END;
 
     END;
@@ -130,7 +130,7 @@ codeunit 50101 "Cosmo Control de calidad"
             Genera_Lineas_Plazo_Envio(T37);
 
 
-        Actualizar_Campos_Globales(T37."Document No.");
+        Actualizar_Campos_Globales(T37."Document No.", '');
     end;
 
 
@@ -203,7 +203,7 @@ codeunit 50101 "Cosmo Control de calidad"
 
                 tCalidad.MODIFY(TRUE);
 
-                Actualizar_Campos_Globales(t111."Order No.");
+                Actualizar_Campos_Globales(t111."Order No.", t110."No.");
             END;
 
         END;
@@ -221,10 +221,10 @@ codeunit 50101 "Cosmo Control de calidad"
         IF tCalidad.FINDFIRST() THEN
             tCalidad.DELETEALL();
 
-        Actualizar_Campos_Globales(T37."Document No.");
+        Actualizar_Campos_Globales(T37."Document No.", '');
     end;
 
-    LOCAL procedure Actualizar_Campos_Globales(NumPedido: Code[20])
+    LOCAL procedure Actualizar_Campos_Globales(NumPedido: Code[20]; NumAlbaran: code[20])
     var
         tCalidad: record "Cosmo Log Calidad plazos envio";
         t36: Record 36;
@@ -276,7 +276,7 @@ codeunit 50101 "Cosmo Control de calidad"
                 IF tCalidad."Total enviado pedido" <> 0 THEN
                     tCalidad."Porc. cantidad en tiempo ped." := ROUND(tCalidad."Total enviado pedido OT" * 100 / tCalidad."Total enviado pedido", 1);
 
-
+                tCalidad.Albaran := NumAlbaran;
                 tCalidad.MODIFY(TRUE);
 
             UNTIL tCalidad.NEXT() = 0;

@@ -1,0 +1,26 @@
+{
+  "id": "b1bace12-5ba9-41c6-a776-32432697f630",
+  "name": "Calidad en envios",
+  "publisher": "Default publisher",
+  "version": "1.0.0.0",
+  "brief": "",
+  "description": "",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "./icono/calidad.jpg",
+  "screenshots": [],
+  "platform": "14.0.0.0",
+  "application": "14.0.0.0",
+  "idRanges": [
+    {
+      "from": 50100,
+      "to": 50149
+    }
+  ],
+  "contextSensitiveHelpUrl": "https://Calidademenvios.com/help/",
+  "showMyCode": true,
+  "runtime":"3.0",
+  "features": ["TranslationFile"]
+}

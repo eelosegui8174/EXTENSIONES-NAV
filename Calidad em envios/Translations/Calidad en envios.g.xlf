@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="en-US" original="Calidad en envios">
+    <body>
+      <group id="body">
+        <trans-unit id="Table 4055476647 - Field 1641233144 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Cliente</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Cosmo Conf. compromiso entrega - Field Cliente - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4055476647 - Field 172941894 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Periodo</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Cosmo Conf. compromiso entrega - Field Periodo - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4055476647 - Field 2078961945 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Desde hora</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Cosmo Conf. compromiso entrega - Field Desde hora - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4055476647 - Field 2389801945 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Desde dia</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Cosmo Conf. compromiso entrega - Field Desde dia - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4055476647 - Field 1566700213 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Hasta hora</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Cosmo Conf. compromiso entrega - Field Hasta hora - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4055476647 - Field 4001307717 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Hasta dia</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Cosmo Conf. compromiso entrega - Field Hasta dia - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4055476647 - Field 1654067015 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Dia envio comprometido</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Cosmo Conf. compromiso entrega - Field Dia envio comprometido - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4055476647 - Control 1991915875 - Property 3830149458" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Fecha pedido</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Cosmo Conf. compromiso entrega - Control Fecha - Property caption</note>
+        </trans-unit>
+        <trans-unit id="Table 227016065 - Field 3480486328 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>No. pedido</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Cosmo Log Calidad plazos envio - Field No. pedido - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 227016065 - Field 178754320 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Linea pedido</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Cosmo Log Calidad plazos envio - Field Linea pedido - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 227016065 - Field 515425134 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Fecha envio</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Cosmo Log Calidad plazos envio - Field Fecha envio - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 227016065 - Field 1892454462 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Fecha pedido</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Cosmo Log Calidad plazos envio - Field Fecha pedido - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 227016065 - Field 3692858709 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>No. cliente</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Cosmo Log Calidad plazos envio - Field No. cliente - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 227016065 - Field 2829149255 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Nombre cliente</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Cosmo Log Calidad plazos envio - Field Nombre cliente - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 227016065 - Field 4227753397 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>No. producto</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Cosmo Log Calidad plazos envio - Field No. producto - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 227016065 - Field 1475260075 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Descripcion</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Cosmo Log Calidad plazos envio - Field Descripcion - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 227016065 - Field 3347137129 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Cantidad linea</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Cosmo Log Calidad plazos envio - Field Cantidad linea - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 227016065 - Field 2776673568 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Cantidad pendiente</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Cosmo Log Calidad plazos envio - Field Cantidad pendiente - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 227016065 - Field 3444693369 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Fecha entrega requerida</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Cosmo Log Calidad plazos envio - Field Fecha entrega requerida - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 227016065 - Field 792459542 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Dia solicitud requerida</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Cosmo Log Calidad plazos envio - Field Dia solicitud requerida - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 227016065 - Field 3662313343 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Fecha comprometida</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Cosmo Log Calidad plazos envio - Field Fecha comprometida - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 227016065 - Field 2375326234 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Dia comprometido</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Cosmo Log Calidad plazos envio - Field Dia comprometido - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 227016065 - Field 511201360 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Solicitado en tiempo</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Cosmo Log Calidad plazos envio - Field Solicitado en tiempo - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 227016065 - Field 1042216969 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Enviado en tiempo</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Cosmo Log Calidad plazos envio - Field Enviado en tiempo - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 227016065 - Field 2962575092 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Cantidad enviada</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Cosmo Log Calidad plazos envio - Field Cantidad enviada - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 227016065 - Field 1758550310 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Porcentaje enviado pedido</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Cosmo Log Calidad plazos envio - Field Porcentaje enviado pedido - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 227016065 - Field 3968932564 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Cant. solicitado OT</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Cosmo Log Calidad plazos envio - Field Cant. solicitado OT - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 227016065 - Field 3078160121 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Cant. solicitado T</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Cosmo Log Calidad plazos envio - Field Cant. solicitado T - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 227016065 - Field 4138833301 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Total enviado  linea</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Cosmo Log Calidad plazos envio - Field Total enviado  linea - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 227016065 - Field 4204701092 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Total enviado linea OT</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Cosmo Log Calidad plazos envio - Field Total enviado linea OT - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 227016065 - Field 340560881 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Total enviado linea L</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Cosmo Log Calidad plazos envio - Field Total enviado linea L - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 227016065 - Field 2179581994 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Porc. cantidad en tiempo linea</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Cosmo Log Calidad plazos envio - Field Porc. cantidad en tiempo linea - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 227016065 - Field 3616072043 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Total cantidad pedido</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Cosmo Log Calidad plazos envio - Field Total cantidad pedido - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 227016065 - Field 2258125602 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Total cantidad pendiente</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Cosmo Log Calidad plazos envio - Field Total cantidad pendiente - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 227016065 - Field 3614946665 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Total enviado pedido</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Cosmo Log Calidad plazos envio - Field Total enviado pedido - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 227016065 - Field 158057840 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Total enviado pedido OT</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Cosmo Log Calidad plazos envio - Field Total enviado pedido OT - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 227016065 - Field 4104109061 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Total enviado pedido L</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Cosmo Log Calidad plazos envio - Field Total enviado pedido L - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 227016065 - Field 1363745386 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Porc. cantidad en tiempo ped.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Cosmo Log Calidad plazos envio - Field Porc. cantidad en tiempo ped. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 227016065 - Field 421302296 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Total solicitado OT</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Cosmo Log Calidad plazos envio - Field Total solicitado OT - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 227016065 - Field 1293472501 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Total solicitado T</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Cosmo Log Calidad plazos envio - Field Total solicitado T - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3172348615 - Method 4259022041 - NamedType 1462959863" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Error en configuración de tabla de compromiso para cliente %1 y día/hora %2 %3.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Cosmo Control de calidad - Method Control_Fecha_Requerida_En_Tiempo - NamedType Error50000</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 90402893 - Field 928673041 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Cosmo Dia solicitud requerida</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Cosmo T37 Añadir campos plazos - Field Cosmo Dia solicitud requerida - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 90402893 - Field 2317315068 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Cosmo Fecha comprometida</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Cosmo T37 Añadir campos plazos - Field Cosmo Fecha comprometida - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 90402893 - Field 2872177253 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Cosmo Dia comprometido</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Cosmo T37 Añadir campos plazos - Field Cosmo Dia comprometido - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 90402893 - Field 4249859147 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Cosmo Solicitado en tiempo</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Cosmo T37 Añadir campos plazos - Field Cosmo Solicitado en tiempo - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2156523551 - Field 928673041 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Cosmo Dia solicitud requerida</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Cosmo T111 Añadir campos plazo - Field Cosmo Dia solicitud requerida - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2156523551 - Field 2317315068 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Cosmo Fecha comprometida</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Cosmo T111 Añadir campos plazo - Field Cosmo Fecha comprometida - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2156523551 - Field 2872177253 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Cosmo Dia comprometido</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Cosmo T111 Añadir campos plazo - Field Cosmo Dia comprometido - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2156523551 - Field 4249859147 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Cosmo Solicitado en tiempo</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Cosmo T111 Añadir campos plazo - Field Cosmo Solicitado en tiempo - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2156523551 - Field 3682867163 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Cosmo Entregado en tiempo</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Cosmo T111 Añadir campos plazo - Field Cosmo Entregado en tiempo - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 254416987 - Field 1669762574 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Cosmo Cant en lineas venta</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Cosmo Campos Sales header - Field Cosmo Cant en lineas venta - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 254416987 - Field 230906731 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Cosmo Total solicitado OT</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Cosmo Campos Sales header - Field Cosmo Total solicitado OT - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 254416987 - Field 1430245434 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Cosmo Total solicitado T</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Cosmo Campos Sales header - Field Cosmo Total solicitado T - Property Caption</note>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

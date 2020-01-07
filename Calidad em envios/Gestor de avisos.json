@@ -1,0 +1,21 @@
+{
+    "name": "Cosmo ruleset",
+    "description": "ocultar avisos y errores molestos",
+    "rules": [
+        {
+         "id": "AA0194",
+          "action": "None",
+         "justification": "no siempre tiene que haber un triger y puede tener herencias"
+        },    
+        {
+            "id": "AA0074",
+             "action": "None",
+            "justification": "No me interesa que me de los sufijos de las variables"
+        },
+        {
+            "id": "AA0005",
+             "action": "None",
+            "justification": "No entiendo la advertencia"
+        }         
+    ]
+}

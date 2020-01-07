@@ -6,14 +6,14 @@
             "request": "launch",
             "name": "Your own server",
             "server": "http://localhost",
-            "serverInstance": "DynamicsNAV130",
+            "serverInstance": "BC140",
             "authentication": "Windows",
             "startupObjectId": 22,
             "startupObjectType": "Page",
             "breakOnError": true,
             "launchBrowser": true,
-            "enableLongRunningSqlStatements": true,
-            "enableSqlInformationDebugger": true
+            "schemaUpdateMode": "Synchronize"
+         
         }
     ]
 }

@@ -1,4 +1,5 @@
 ﻿<<<<<<< HEAD
+tiene que ser objetos con la cversion que vayamos a sacar
 
 Nos creamos dos carpetas, en este ejemplo:
 -	C:\CAL2AL
@@ -8,7 +9,7 @@ Abrimos cmd y vamos a la carpeta de instalación:
 cd "C:\Program Files (x86)\Microsoft Dynamics NAV\110\RoleTailored Client"
 
 Primero ejecutamos la instrucción finsql de los objetos deseados, ejemplos:
-finsql.exe Command=ExportToNewSyntax, File="C:\CAL2AL\tables.txt", Database="NAV2018_CU6", ServerName=ESBCN-DXS8717NB, filter=type="table";ID="112|114|1275"
+finsql.exe Command=ExportToNewSyntax, File="C:\CAL2AL\tables.txt", Database="Demo Database BC (14-0)", ServerName=ESBIO-EXE8174N2\BC14, filter=type="table";ID="50002"
 finsql.exe Command=ExportToNewSyntax, File="C:\CAL2AL\codeunits.txt", Database="NAV2018_CU6", ServerName=ESBCN-DXS8717NB, filter=type="codeunit";ID="50000"
 finsql.exe Command=ExportToNewSyntax, File="C:\CAL2AL\xmlports.txt", Database="NAV2018_CU6", ServerName=ESBCN-DXS8717NB, filter=type="xmlport";ID="50000..50001"
 finsql.exe Command=ExportToNewSyntax, File="C:\CAL2AL\pages.txt", Database="Demo Database NAV (13-0)", ServerName=DESKTOP-HMOIFH3, filter=type="page";ID="132|134"

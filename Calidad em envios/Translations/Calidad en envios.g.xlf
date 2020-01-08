@@ -203,6 +203,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table Cosmo Log Calidad plazos envio - Field Total solicitado T - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 227016065 - Field 3154957429 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Albaran</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Cosmo Log Calidad plazos envio - Field Albaran - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Codeunit 3172348615 - Method 4259022041 - NamedType 1462959863" size-unit="char" translate="yes" xml:space="preserve">
           <source>Error en configuración de tabla de compromiso para cliente %1 y día/hora %2 %3.</source>
           <note from="Developer" annotates="general" priority="2"></note>

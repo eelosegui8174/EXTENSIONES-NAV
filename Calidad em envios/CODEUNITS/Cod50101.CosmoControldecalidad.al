@@ -58,10 +58,15 @@ codeunit 50101 "Cosmo Control de calidad"
         tConfCalidad.SETRANGE(tConfCalidad.Cliente, T37."Sell-to Customer No.");
         IF NOT tConfCalidad.ISEMPTY() THEN BEGIN
             IF T37."Line No." <> 0 THEN BEGIN
-                CLEAR(tCalidad);
-                tCalidad.INIT();
-                tCalidad.VALIDATE("No. pedido", T37."Document No.");
-                tCalidad.VALIDATE("Linea pedido", T37."Line No.");
+
+                if not tCalidad.GET(t37."Document No.", t37."Line No.", 0D) then begin
+                    CLEAR(tCalidad);
+                    tCalidad.INIT();
+                    tCalidad.VALIDATE("No. pedido", T37."Document No.");
+                    tCalidad.VALIDATE("Linea pedido", T37."Line No.");
+                    tCalidad.insert(true);
+                end;
+
                 tCalidad.VALIDATE("Fecha pedido", t36."Order Date");
                 tCalidad.VALIDATE("No. cliente", T37."Sell-to Customer No.");
                 tCalidad.VALIDATE("Nombre cliente", tCliente.Name);
@@ -73,13 +78,14 @@ codeunit 50101 "Cosmo Control de calidad"
                 tCalidad.VALIDATE("Fecha comprometida", T37."cosmo Fecha comprometida");
                 tCalidad.VALIDATE("Dia comprometido", T37."cosmo Dia comprometido");
                 tCalidad.VALIDATE("Solicitado en tiempo", T37."cosmo Solicitado en tiempo");
-                tCalidad.INSERT(TRUE);
+                tCalidad.Modify(True);
             END;
-
-            Actualizar_Campos_Globales(T37."Document No.", '');
         END;
 
+        Actualizar_Campos_Globales(T37."Document No.", '');
     END;
+
+
 
     procedure Modifica_Lineas_Plazo_Envio(T37: Record "Sales Line"; Campo: Option ,"Fecha requerida",Cliente,Producto,Cantidad)
     var

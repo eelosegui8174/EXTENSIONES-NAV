@@ -172,6 +172,9 @@ table 50103 "Cosmo Log Calidad plazos envio"
 
             Description = 'no son campos calculados';
         }
+        field(120; Albaran; Code[20])
+        { DataClassification = CustomerContent; }
+
     }
 
     keys

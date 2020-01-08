@@ -77,6 +77,10 @@ page 50101 "Cosmo Log. cal. plazo envios"
                 {
                     ApplicationArea = All;
                 }
+                field(Albaran; Albaran)
+                {
+                    ApplicationArea = All;
+                }
                 field("No. producto"; "No. producto")
                 {
                     ApplicationArea = All;
